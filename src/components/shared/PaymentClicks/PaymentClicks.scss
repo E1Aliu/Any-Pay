@@ -1,0 +1,101 @@
+.shared-payment-clicks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:7.5% 0;
+    padding:0 0 0 10%;
+    .img{
+        content: url('../../../assets/Apps/img1.png');
+        width: 47.5%;
+    }
+    .col1{
+        width: 32.5%;
+    }
+    h1{
+        font-size: 27.5px;
+    }
+    p{
+        font-size: 17px;
+        line-height: 1.7;
+        margin:15px 0 25px;
+    }
+    .buttons{
+        display: flex;
+    }
+    button{
+        border:1px solid #ddd;
+        border-radius: 5px;
+        background: none;
+        display: flex;
+        align-items: center;
+        padding:7.5px 10px;
+        font-size: 17px;
+        margin-right: 10px;
+        cursor: pointer;
+        svg{
+            font-size: 22px;
+            margin-right: 8.5px;
+        }
+    }
+    .button1{
+        margin-right: 20px;
+        svg{
+            color:#427cff;
+        }
+    }
+    .button2{
+        svg{
+            color:#d4d653;
+        }
+    }
+}
+
+@media(max-width:1451px){
+    .shared-payment-clicks{
+        .img{
+            width: 47.5%;
+        }
+        .col1{
+            width: 37.5%;
+        }
+        h1{
+            font-size: 20px;
+        }
+        p{
+            font-size: 15px;
+            margin:12.5px 0 15px;
+        }
+        .buttons{
+           flex-wrap: wrap;
+        }
+        button{
+            padding:7.5px 10px;
+            font-size: 14px;
+            margin:5px 0;
+            svg{
+                font-size: 20px;
+                margin-right: 7.5px;
+            }
+        }
+        .button1{
+            margin-right:15px;
+        }
+    }
+}
+
+@media(max-width:900px){
+    .shared-payment-clicks{
+        padding:0 7.5%;
+        margin:30px 0;
+        .img{
+            width: 400px;
+            max-width: 100%;
+            margin:20px auto;
+        }
+        .col1{
+            width: 100%;
+            margin:20px auto;
+        }
+    }
+}

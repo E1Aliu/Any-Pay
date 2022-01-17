@@ -1,0 +1,167 @@
+.billing-page .recharge .row3{
+    margin:7.5% 0;
+    padding:0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .images{
+        width: 45%;
+        position: relative;
+    }
+    .info{
+        width:35%;
+        h1{
+            font-size: 30px;
+        }
+        p{
+            font-size: 18px;
+            line-height: 1.7;
+            margin:15px 0 25px;
+        }
+    }
+    .img{
+        content: url('../../../../assets/Billing/img2.png');
+        width: 90%;
+        border-radius: 15px;
+    }
+    .card{
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 2.6px;
+        padding:20px;
+        width: 375px;
+        max-width: 80%;
+        border:1px solid #f3f3f3;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top:50%;
+        transform: translateY(-50%);
+    }
+    .block{
+        margin:0 15px;
+        flex:1;
+        h6{
+            font-size: 15px;
+        }
+        small{
+            font-size: 16px;
+        }
+    }
+    span{
+        background: #32E980;
+        color:#fff;
+        font-size: 17px;
+        padding:4px 17.5px;
+        border-radius: 5px;
+    }
+    .icon{
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:#fff;
+        background: #FF6565;
+        box-shadow: 3px -3px  #9904FB;
+    }
+}
+
+@media(max-width:1451px){
+    .billing-page .recharge .row3{
+        margin:7.5% 0;
+        padding:0 8.5%;
+        .images{
+            width: 45%;
+        }
+        .info{
+            width:40%;
+            h1{
+                font-size: 25px;
+            }
+            p{
+                font-size: 15px;
+                margin:15px 0 25px;
+            }
+        }
+        .img{
+            width: 90%;
+            border-radius: 15px;
+        }
+        .card{
+            box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 2.6px;
+            padding:15px;
+            width: 315px;
+            max-width: 80%;
+            top:50%;
+            transform: translateY(-50%);
+        }
+        .block{
+            margin:0 15px;
+            h6{
+                font-size: 13px;
+            }
+            small{
+                font-size: 13px;
+            }
+        }
+        span{
+            font-size: 15px;
+            padding:4px 15px;
+            border-radius: 5px;
+        }
+        .icon{
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+        }
+    }
+}
+
+
+@media(max-width:975px){
+    .billing-page .recharge .row3{
+        margin:35px 0;
+        padding:0;
+        .images{
+            width: 100%;
+            margin:20px 0;
+        }
+        .card{
+            right: unset;
+            left: 25%;
+        }
+        .img{
+            width: 400px;
+            max-width: 100%;
+            border-radius: 0 10px 10px 0;
+        }
+        .info{
+            width:100%;
+            padding:0 7.5%;
+            margin:20px 0;
+            h1{
+                font-size: 20px;
+            }
+            p{
+                margin:15px 0 20px;
+            }
+        }
+    }
+}
+
+@media(max-width:510px){
+    .billing-page .recharge .row3{
+        .card{
+            top:unset;
+            bottom:2.5%;
+            transform: translateY(0);
+            left: unset;
+            right: 5%;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.account-page .benefits-row{
+    margin:5% 0;
+    padding:0 7.5%;
+    h1{
+        font-size: 27.5px;
+        margin-bottom: 75px;
+    }
+    .items1{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .item1{
+        border:1px solid #e5e5e5;
+        padding:65px 25px 25px;
+        border-radius: 10px;
+        position: relative;
+        width: 22.5%;
+        transition: 0.3s ease-in-out;
+        &:hover{
+            transform: translateY(-10px);
+        }
+    }
+    .icon{
+        position: absolute;
+        height: 65px;
+        left: 25px;
+        top:-25px;
+    }
+    h6{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1450px){
+    .account-page .benefits-row{
+        margin:6% 0 5%;
+        h1{
+            font-size: 20px;
+            margin-bottom: 55px;
+        }
+        .item1{
+            padding:50px 20px 20px;
+            width: 23%;
+        }
+        .icon{
+            height: 50px;
+            left: 20px;
+            top:-20px;
+        }
+        h6{
+            font-size: 13px;
+        }
+    }
+}
+
+
+@media(max-width:1050px){
+    .account-page .benefits-row{
+        margin:7.5% 0 5%;
+        h1{
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .item1{
+            width: 47.5%;
+            margin:30px 0;
+        }
+    }
+}
+
+@media(max-width:500px){
+    .account-page .benefits-row{
+        margin:50px 0 5px;
+        h1{
+            margin-bottom: 17.5px;
+        }
+        .item1{
+            width: 100%;
+            margin:25px 0;
+            &:hover{
+                transform: translateY(0px);
+            }
+        }
+    }
+}

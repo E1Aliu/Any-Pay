@@ -1,0 +1,46 @@
+.women-fashion-page .fashion-component .shared-fashion-slider-container{
+    margin:-50px 0 0;
+}
+
+@media(max-width:1431px){
+    .women-fashion-page .fashion-component .shared-fashion-slider-container{
+        margin:-30px 0 0;
+    }    
+}
+
+@media(max-width:550px){
+    .women-fashion-page .fashion-component .shared-fashion-slider-container{
+        margin:50px 0;
+    }    
+}
+
+.women-fashion-page .fashion-component .images{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:5% 0;
+    padding:0 2.5%;
+    .img{
+        width: 49%;
+        border:1px solid #eee;
+        border-radius: 10px;
+    }
+    .img1{
+        content: url('../../../../assets/WomenFashion/img1.png');
+    }
+    .img2{
+        content: url('../../../../assets/WomenFashion/img2.png');
+    }
+}
+
+@media(max-width:767px){
+    .women-fashion-page .fashion-component .images{
+        margin:35px 0;
+        padding:0 5%;
+        .img{
+            width: 400px;
+            max-width: 100%;
+            margin:10px auto;
+        }
+    }
+}

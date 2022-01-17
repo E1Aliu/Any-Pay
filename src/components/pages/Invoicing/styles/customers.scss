@@ -1,0 +1,549 @@
+.invoicing-page .customers .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin:8.5% 0;
+    padding:0 7.5%;
+}
+
+.invoicing-page .customers .row .info{
+    width: 37.5%;
+    h1{
+        font-size: 27.5px;
+    }
+    p{
+        font-size: 17px;
+        line-height: 1.7;
+        margin:15px 0 25px;
+    }
+}
+
+
+.invoicing-page .customers .row .images{
+    width: 50%;
+    padding-top: 4%;
+    position: relative;
+    &:hover{
+        .bg{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .img{
+        width: 65%;
+        border-radius: 15px;
+        margin-left: auto;
+        position: relative;
+        z-index: 2;
+    }
+    .img1{
+        content: url('../../../../assets/Invoicing/img11.png');
+    }
+    .img2{
+        content: url('../../../../assets/Invoicing/img22.png');
+    }
+    .bg{
+        position: absolute;
+        top:0;
+        left:0;
+        width: 85%;
+        height: 90%;
+        border-radius: 15px;
+        transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s ease-in-out;
+    }
+    .bg1{
+        background: #FAE5F7;
+    }
+    .bg2{
+        background: #E5FAED;
+    }
+    .circles{
+        position: absolute;
+        width: 95px;
+        height:95px;
+        z-index: 3;
+    }
+    .circles1{
+        top:-35px;
+        left:-35px;
+    }
+    .circles2{
+        bottom:-35px;
+        right:-35px;
+    }
+    .inner-circles{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+    .circle{
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+    }
+    .circle1{
+        border: 3px solid #FF9292;
+    }
+    .circle2{
+        border: 3px solid #A7D3FF;
+        position: absolute;
+        bottom:0;
+        left:0;
+    }
+    .circle3{
+        border: 3px solid #A7FFD0;
+    }
+}
+
+.invoicing-page .customers .phone{
+    width: 250px;
+    max-width: 45%;
+    position: absolute;
+    z-index: 4;
+    left: 15%;
+    border-radius: 10px;
+    padding:15px;
+    bottom:0;
+    background: #fff;
+    .url{
+        background: #f1f1f1;
+        color:#555;
+        font-size: 12px;
+        padding:3.5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 12.5px;
+    }
+    h5{
+        color:#888;
+        font-size: 11px;
+        text-align: center;
+    }
+    h2{
+        font-size: 25px;
+        text-align: center;
+        margin:15px 0 10px;
+    }
+    .small-item{
+        margin:10px 0;
+    }
+    h6{
+        font-size: 11px;
+    }
+    span{
+        color:#888;
+        font-size: 12px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .input{
+        display: flex;
+        align-items: center;
+        border:1px solid #bbb;
+        border-radius: 5px;
+        padding:7.5px;
+        font-size: 12.5px;
+        color:#555;
+        margin:5px 0;
+    }
+    .check{
+        width: 13.5px;
+        height: 13.5px;
+        border-radius: 50%;
+        border:1px solid #888;
+        margin-right: 7.5px;
+    }
+    .check1{
+        background: #427cff;
+        border:1px solid #427cff;
+    }
+}
+@media(max-width:1450px){
+    .invoicing-page .customers .row{
+        margin:9% 0;
+        padding:0 7.5%;
+    }
+    .invoicing-page .customers .row .info{
+        width: 37.5%;
+        h1{
+            font-size: 20px;
+        }
+        p{
+            font-size: 14px;
+            margin:12.5px 0 20px;
+        }
+    }    
+    .invoicing-page .customers .row .images{
+        width: 50%;
+        padding-top: 4%;
+        .img{
+            width: 65%;
+            border-radius: 12.5px;
+        }
+        .bg{
+            width: 85%;
+            height: 90%;
+            border-radius: 12.5px;
+        }
+        .circles{
+            width: 85px;
+            height: 85px;
+        }
+        .circles1{
+            top:-30px;
+            left:-30px;
+        }
+        .circles2{
+            bottom:-30px;
+            right:-30px;
+        }
+        .circle{
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+
+    .invoicing-page .customers .phone{
+        width: 200px;
+        max-width: 45%;
+        left: 15%;
+        border-radius: 10px;
+        padding:10px;
+        .url{
+            font-size: 9px;
+            padding:3px;
+            margin-bottom: 10px;
+        }
+        h5{
+            font-size: 9px;
+        }
+        h2{
+            font-size: 18.5px;
+            margin:12.5px 0 5px;
+        }
+        .small-item{
+            margin:8px 0;
+        }
+        h6{
+            font-size: 9px;
+        }
+        span{
+            font-size: 9px;
+        }
+        .input{
+            padding:5px;
+            font-size: 10px;
+            margin:3.5px 0;
+        }
+        .check{
+            width: 12px;
+            height: 12px;
+            margin-right: 6px;
+        }
+    }
+}
+
+
+@media(max-width:900px){
+    .invoicing-page .customers .row{
+        margin:0;
+        padding:0 5%;
+    }
+    .invoicing-page .customers .row1{
+        flex-direction: column-reverse;
+    }
+    .invoicing-page .customers .row .info{
+        width: 100%;
+        margin:20px auto;
+        p{
+            font-size: 15px;
+        }
+    }    
+    .invoicing-page .customers .row .images{
+        width: 400px;
+        max-width: 95%;
+        margin:35px auto;
+        padding-top: 15px;
+        .img{
+            width: 80%;
+            border-radius: 10px;
+        }
+        .bg{
+            border-radius: 10px;
+        }
+        .circles{
+            width: 75px;
+            height: 75px;
+        }
+        .circles1{
+            top:-20px;
+            left:-20px;
+        }
+        .circles2{
+            bottom:-20px;
+            right:-20px;
+        }
+        .circle{
+            width: 65px;
+            height: 65px;
+        }
+    }
+
+    .invoicing-page .customers .phone{
+        max-width: 50%;
+        bottom: -25px;
+        left: 2.5%;
+        border-radius: 8px;
+        padding:5px 8px 0;
+        .url{
+            font-size: 8px;
+            padding:3px;
+            margin-bottom: 8px;
+        }
+        h5{
+            font-size: 8px;
+        }
+        h2{
+            font-size: 15px;
+            margin:10px 0 5px;
+        }
+        .small-item{
+            margin:8.5px 0;
+        }
+        h6{
+            font-size: 8px;
+        }
+        span{
+            font-size: 8px;
+        }
+        .input{
+            padding:5px;
+            font-size: 9px;
+            margin:3.5px 0;
+        }
+        .check{
+            width: 11px;
+            height: 11px;
+            margin-right: 5px;
+        }
+    }
+}
+
+.invoicing-page .customers .row2 .cards{
+    width: 400px;
+    position: absolute;
+    z-index: 4;
+    bottom: -25px;
+    display: flex;
+    align-items: center;
+}
+.invoicing-page .customers .row2 .card1{
+    background: #111;
+    width: 35%;
+    border-radius: 10px;
+    padding:10px;
+    h5{
+        color:#ddd;
+        font-weight: normal;
+        font-size: 12px;
+    }
+    .input{
+        background: #444;
+        font-size: 12px;
+        color:#fff;
+        border-radius: 5px;
+        padding:5px;
+        margin:5px 0 20px;
+    }
+    .colors{
+        display: flex;
+    }
+    .color{
+        width: 17.5px;
+        height: 17.5px;
+        border-radius: 50%;
+        margin-right: 10px;
+        margin-top: 7.5px;
+    }
+    .color1{
+        background: rgb(89, 0, 255);
+    }
+    .color2{
+        background: rgb(255, 52, 52);
+    }
+    .color3{
+        background: orange;
+    }
+    .color4{
+        background: #777;
+    }
+}
+
+.invoicing-page .customers .row2 .card2{
+    width: 65%;
+    background: #f8f8f8;
+    border-radius: 15px;
+    .inline{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin:20px 15px 10px;
+    }
+    span{
+        color:#427cff;
+        font-size: 15px;
+    }
+    .block{
+        flex: 1;
+        text-align: center;
+        h6, small{
+            line-height: 1;
+            font-size: 13px;
+        }
+    }
+    small{
+        font-size: 13px;
+        color:#555;
+    }
+    .img3{
+        content: url('../../../../assets/Invoicing/card.png');
+        width: 85%;
+        margin:15px auto 0;
+        bordeR:1px solid #fff;
+        border-radius: 10px 10px 0 0;
+    }
+    .inner-card{
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        padding:15px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    button{
+        background: #111;
+        color:#fff;
+        border:0;
+        padding:10px;
+        border-radius: 20px;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:1450px){
+    .invoicing-page .customers .row2 .cards{
+        width: 300px;
+        bottom: -20px;
+    }
+    .invoicing-page .customers .row2 .card1{
+        width: 35%;
+        border-radius: 8px;
+        padding:8px;
+        h5{
+            font-size: 10px;
+        }
+        .input{
+            font-size: 9px;
+            margin:5px 0 15px;
+        }
+        .color{
+            width: 13px;
+            height: 13px;
+            margin-right: 7.5px;
+            margin-top: 7.5px;
+        }
+    }
+    
+    .invoicing-page .customers .row2 .card2{
+        border-radius: 12.5px;
+        .inline{
+            margin:15px 10px 7.5px;
+        }
+        span{
+            font-size: 13px;
+        }
+        .block{
+            h6, small{
+                font-size: 11px;
+            }
+        }
+        small{
+            font-size: 13px;
+        }
+        .img3{
+            width: 75%;
+            border-radius: 8px 8px 0 0;
+        }
+        .inner-card{
+            padding:10px;
+            small{
+                font-size: 11px;
+            }
+        }
+        h2{
+            font-size: 15px;
+        }
+        button{
+            padding:7.5px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin-top: 7.5px;
+        }
+    }
+}
+
+@media(max-width:600px){
+    .invoicing-page .customers .row2 .cards{
+        right: 0;
+        left: unset;
+    }
+
+    .invoicing-page .customers .row2 .card2{
+        border-radius: 10px;
+        .inline{
+            margin:15px 10px 7.5px;
+        }
+        span{
+            font-size: 12px;
+        }
+        .block{
+            h6, small{
+                font-size: 10px;
+            }
+        }
+        small{
+            font-size: 10px;
+        }
+        .img3{
+            display: none;
+        }
+        .inner-card{
+            padding:8px;
+            small{
+                font-size: 10px;
+            }
+        }
+        h2{
+            font-size: 14px;
+        }
+        button{
+            padding:6px;
+            font-size: 12px;
+        }
+    }
+    .invoicing-page .customers .row2 .images{
+        .img{
+            width: 90%;
+        }
+    }
+}

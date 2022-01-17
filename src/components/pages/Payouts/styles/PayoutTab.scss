@@ -1,0 +1,388 @@
+.payouts-page .tab-container{
+    position: relative;
+    margin:5% 0;
+    padding:5% 0;
+    .row3{
+        background: url('../../../../assets/Payouts/row-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color:#fff;
+        padding:11% 5% 3.5%;
+        clip-path: polygon(0 0, 100% 55%, 100% 100%, 0 100%);
+        h1{
+            padding:0 25px;
+            font-size: 27.5px;
+        }
+        .p{
+            font-size: 18px;
+            padding:0 25px;
+            margin:15px 0 25px;
+        }
+    }
+    .items3{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 45%;
+    }
+    .item3{
+        width: 47.5%;
+        padding:25px;
+        border-radius: 10px;
+        .icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 55px;
+            height: 55px;
+            border-radius: 5px;
+            font-size: 37.5px;
+        }
+        &:first-child{
+            .icon{
+                background: linear-gradient(rgba(223, 66, 202, 0.25),rgba(223, 66, 202, 0.25));
+            }
+        }
+        &:last-child{
+            .icon{
+                background: linear-gradient(rgba(46, 201, 108, 0.25),rgba(46, 201, 108, 0.25));
+            }
+        }
+        h6{
+            font-size: 18px;
+            margin:15px 0;
+        }
+        p{
+            font-size: 18px;
+            line-height: 1.7;
+        }
+    }
+}
+
+.payouts-page .tab-container .inner-container{
+    // border:2px solid green;
+    position: absolute;
+    width: 720px;
+    max-width: 40%;
+    right: 7.5%;
+    top:50%;
+    transform: translateY(-50%);
+    background: url('../../../../assets/Payouts/row-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 12px -12px  rgba(46, 201, 108,0.3);
+    -moz-box-shadow: 12px -12px  rgba(46, 201, 108,0.3);
+    -webkit-box-shadow: 12px -12px  rgba(46, 201, 108,0.3);
+    -o-box-shadow: 12px -12px  rgba(46, 201, 108,0.3);
+    .payout-tab{
+        // bordeR:1px solid red;
+        padding:25px 40px;
+        color:#fff;
+    }
+    .react-tabs__tab-list{
+        display: flex;
+        // bordeR:1px solid white;
+    }
+    .react-tabs__tab{
+        // bordeR:1px solid red;
+        width: 50%;
+        cursor: pointer;
+        h5{
+            width: fit-content;
+            padding:7.5px 20px;
+            font-size: 20px;
+            border-bottom: 3px solid transparent;
+        }
+    }
+    .react-tabs__tab--selected{
+        h5{
+            border-bottom: 3px solid #FF2727;
+        }
+    }
+    .react-tabs__tab-panel{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .tab-item{
+        width: 47.5%;
+        padding: 25px 20px;
+        margin:10px 0;
+        .icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            font-size: 35px;
+        }
+        h6{
+            font-size: 17px;
+            margin:15px 0;
+        }
+        p{
+            font-size: 17px;
+            line-height: 1.7;
+        }
+    }
+}
+
+@media(max-width:1451px){
+    .payouts-page .tab-container{
+        .row3{
+            padding:11% 5% 3.5%;
+            clip-path: polygon(0 0, 100% 50%, 100% 100%, 0 100%);
+            h1{
+                padding:0 20px;
+                font-size: 20px;
+            }
+            .p{
+                font-size: 15px;
+                padding:0 20px;
+                margin:12.5px 0 20px;
+            }
+        }
+        .items3{
+            width: 50%;
+        }
+        .item3{
+            padding:20px;
+            .icon{
+                width: 47.5px;
+                height: 47.5px;
+                font-size: 35px;
+            }
+            h6{
+                font-size: 15px;
+                margin:12.5px 0;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+    
+    .payouts-page .tab-container .inner-container{
+        width: 720px;
+        max-width: 40%;
+        border-radius: 15px;
+        box-shadow: 10px -10px  rgba(46, 201, 108,0.3);
+        -moz-box-shadow: 10px -10px  rgba(46, 201, 108,0.3);
+        -webkit-box-shadow: 10px -10px  rgba(46, 201, 108,0.3);
+        -o-box-shadow: 10px -10px  rgba(46, 201, 108,0.3);
+        .payout-tab{
+            padding:20px 30px;
+        }
+        .react-tabs__tab-list{
+            display: flex;
+        }
+        .react-tabs__tab{
+            h5{
+                padding:5px 15px;
+                font-size: 17px;
+            }
+        }
+
+        .tab-item{
+            width: 48%;
+            padding:15px;
+            margin:5px 0;
+            .icon{
+                font-size: 30px;
+            }
+            h6{
+                font-size: 14px;
+                margin:15px 0;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+@media(max-width:1050px){
+    .payouts-page .tab-container{
+        display: block;
+        background: url('../../../../assets/Payouts/row-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding:45px 0;
+        margin:45px 0;
+        .row3{
+            padding:0 7.5%;
+            background: none;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            h1{
+                padding:0;
+            }
+            .p{
+                padding:0;
+                margin:10px 0 20px;
+            }
+        }
+        .item3{
+            padding:0;
+            margin:17.5px 0;
+            &:hover{
+                background: none;
+            }
+        }
+        .items3{
+            width: 100%;
+        }
+    }
+    
+    .payouts-page .tab-container .inner-container{
+        position: relative;
+        top:unset;
+        right: unset;
+        width: 100%;
+        margin-top: 30px;
+        border-top:1px solid white;
+        max-width: 100%;
+        transform: translateY(0%);
+        background: none;
+
+        border-radius: 0px;
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        -o-box-shadow: none;
+        
+        .payout-tab{
+            padding:30px 7.5% 10px;
+        }
+        .react-tabs__tab{
+            h5{
+                padding:5px 10px;
+                font-size: 15.6px;
+            }
+        }
+        .react-tabs__tab-list{
+            margin-bottom: 15px;
+        }
+        .tab-item{
+            width: 47.5%;
+            padding:0px;
+            margin:17.5px 0;
+        }
+    }
+}
+
+@media(max-width:530px){
+        
+    .payouts-page .tab-container .inner-container{
+          .tab-item{
+            width:100%;
+            h6{
+                margin:12px 0;
+            }
+        }
+    }
+    .payouts-page .tab-container{
+        .item3{
+            width: 100%;
+        }
+    }
+}
+
+
+.payouts-page .tab-container .row3{
+    .item3{
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        -webkit-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+      }
+      .item3:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        border-radius: 10px;
+        bottom: 0;
+        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        @media(max-width:1050px){
+            background: none;
+        }
+      }
+      .item3:hover{
+        color: white;
+      }
+      .item3:hover:before{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+}
+
+
+
+@-webkit-keyframes hvr-icon-up {
+    0%,
+      50%,
+      100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    25%,
+      75% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+  }
+  @keyframes hvr-icon-up {
+    0%,
+      50%,
+      100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    25%,
+      75% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+  }
+.payouts-page .tab-container .inner-container{
+    .tab-item{
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    }
+    .tab-item .icon {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+    .tab-item:hover .icon{
+        -webkit-animation-name: hvr-icon-up;
+        animation-name: hvr-icon-up;
+        -webkit-animation-duration: 0.75s;
+        animation-duration: 0.75s;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+    }
+}

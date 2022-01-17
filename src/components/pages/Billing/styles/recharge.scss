@@ -1,0 +1,320 @@
+.billing-page .recharge .row1{
+    margin:12.5% 0 10%;
+    padding:0 7.5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .item1{
+        width: 28%;
+        padding:0 20px 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        transition: 0.3s ease-in-out;
+        &:hover{
+            transform: scale(1.03);
+        }
+        &:first-child{
+            background: #ffbdbd;
+            &:hover{
+                h6{
+                    color:#E73131
+                }
+            }
+        }
+        &:nth-child(2){
+            background: #d5f8ec;
+            &:hover{
+                h6{
+                    color:#31E7A9
+                }
+            }
+        }
+        &:nth-child(3){
+            background: #fff0c8;
+            &:hover{
+                h6{
+                    color:#FFBB00
+                }
+            }
+        }
+    }
+    .inner-item{
+        flex: 1;
+        // border:1px solid #eee;
+        background: #fff;
+        border-radius:0 0 10px 10px;
+        padding:20px 30px;
+    }
+    h6{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    p{
+        line-height: 1.7;
+        font-size: 18px;
+    }
+}
+
+@media(max-width:1441px){
+    .billing-page .recharge .row1{
+        padding:0 6.25%;
+        .item1{
+            width: 29.5%;
+            padding:0 15px 15px;
+        }
+        .inner-item{
+            padding:15px 25px;
+        }
+        h6{
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+}
+
+@media(max-width:900px){
+    .billing-page .recharge .row1{
+        margin:10% 0;
+        padding:0 7.5%;
+        justify-content: center;
+        .item1{
+            width: 45%;
+            margin:15px 2.5%;
+            &:hover{
+                transform: scale(1.0);
+            }
+        }
+    }
+}
+
+
+@media(max-width:650px){
+    .billing-page .recharge .row1{
+        margin:35px 0;
+        padding:0 5%;
+        .item1{
+            width: 350px;
+            max-width: 100%;
+            margin:15px 0;
+            padding:0 12px 12px;
+        }
+    }
+}
+
+//================================================
+.billing-page .recharge .row2{
+    position: relative;
+    padding-top:2.5%;
+    .img{
+        content: url('../../../../assets/Billing/img1.png');
+        position: absolute;
+        z-index: 2;
+        width: 42.5%;
+        left: 2.5%;
+        bottom:0;
+    }
+}
+.billing-page .recharge .row2 .inner-row{
+    background: url('../../../../assets/PaymentLinks/bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding:10% 2.5% 5% 45%;
+    color:#fff;
+    clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+    h1{
+        font-size: 25px;
+        margin-bottom: 45px;
+        padding:0 25px;
+    }
+
+    .items2{
+        display: flex;
+        justify-content: space-between;
+    }
+    .item2{
+        width: 33%;
+        padding:25px;        
+        transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s ease-in-out;
+        &:hover{
+            transform: translateY(-12.5px);
+            -webkit-transform: translateY(-12.5px);
+        }
+        &:first-child{
+            .square{
+                border:2px solid #4FFF1C;
+            }
+            .arrow2{
+                color:#4FFF1C;
+            }
+            .line{
+                border-top: 2px dashed #4FFF1C;
+            }
+        }
+        &:nth-child(2){
+            .square{
+                border:2px solid #861CFF;
+            } 
+            .arrow2{
+                color:#861CFF;
+            }
+            .line{
+                border-top: 2px dashed #861CFF;
+            }
+        }
+        &:nth-child(3){
+            .square{
+                border:2px solid #FFB31C;
+            } 
+            .arrow, .line{
+                display: none;
+            }
+        }
+    }
+    .inline{
+        display: flex;
+        align-items: center;
+    }
+    .id{
+        position: relative;
+        h5{
+            font-size: 22.5px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .square{
+        width: 50px;
+        height: 50px;
+        border-radius: 3px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        background:#18244E;
+    }
+    h6{
+        font-size: 18px;
+        margin:25px 0 0;
+    }
+    .arrow{
+        font-size: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg{
+            margin:0 -15px;
+        }
+    }
+    .arrow1{
+        color:#18244E;
+    }
+    .line{
+        flex: 1;
+    }
+}
+
+@media(max-width:1441px){
+    .billing-page .recharge .row2{
+        padding-top:2.5%;
+        .img{
+            width: 40%;
+            left: 2.5%;
+        }
+    }
+    .billing-page .recharge .row2 .inner-row{
+        background-attachment: fixed;
+        padding:10% 2.5% 5% 42.5%;
+        clip-path: polygon(0 17.5%, 100% 0%, 100% 100%, 0% 100%);
+        h1{
+            font-size: 20px;
+            margin-bottom: 35px;
+            padding:0 17.5px;
+        }
+        .items2{
+            flex-wrap: wrap;
+        }
+        .item2{
+            width: 33%;
+            padding:17.5px;        
+            &:hover{
+                transform: translateY(-10px);
+                -webkit-transform: translateY(-10px);
+            }
+        }
+        .id{
+            h5{
+                font-size: 17.5px;
+            }
+        }
+        .square{
+            width: 42px;
+            height: 42px;
+        }
+        h6{
+            font-size: 15px;
+            margin:20px 0 0;
+        }
+        .arrow{
+            font-size: 45px;
+            svg{
+                margin:0 -15px;
+            }
+        }
+    }
+}
+
+
+@media(max-width:901px){
+    .billing-page .recharge .row2{
+        padding:45px 7.5%;
+        background: url('../../../../assets/PaymentLinks/bg1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        .img{
+            width: 400px;
+            max-width: 100%;
+            margin:0 auto 35px;
+            left: unset;
+            bottom: unset;
+            position: relative;
+        }
+    }
+    .billing-page .recharge .row2 .inner-row{
+        background: none;
+        padding:0;
+        clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+        h1{
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 25px;
+            padding:0;
+        }
+        .item2{
+            width: 33%;
+        }
+    }
+}
+
+@media(max-width:650px){
+    .billing-page .recharge .row2 .inner-row{
+        h1{
+            margin-bottom: 15px;
+        }
+        .item2{
+            width: 320px;
+            max-width: 100%;
+            margin:15px auto;
+            padding:17.5px;        
+            &:hover{
+                transform: translateY(0px);
+                -webkit-transform: translateY(0px);
+            }
+        }
+    }
+}

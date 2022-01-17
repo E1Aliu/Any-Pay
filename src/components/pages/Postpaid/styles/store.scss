@@ -1,0 +1,313 @@
+.postpaid-page .store .row3{
+    position: relative;
+    margin: 10% 0 5%;
+    .img{
+        content: url('../../../../assets/Postpaid/img2.png');
+        width: 35%;
+        position: absolute;
+        right: 5%;
+        top:50%;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+    .inner-row{
+        background: url('../../../../assets/Postpaid/row-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding:7.5% 7.5% 3.5%;
+        clip-path: polygon(75% 15%, 100% 0, 100% 100%, 0 100%, 0 0);
+        color:#fff;
+    }
+    .icon1{
+        content: url('../../../../assets/Postpaid/gre.png');
+        width: 55px;
+        margin:0 25px;
+    }
+    h1{
+        font-size: 30px;
+        margin:15px 25px 10px;
+    }
+    .p{
+        font-size: 18px;
+        margin:0 0 30px 25px;
+    }
+    .items{
+        // border: 1px solid red;
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .item{
+        // border:1px solid red;
+        width: 32%;
+        padding:25px;
+        border-radius: 10px;
+        &:hover{
+            background: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25));
+        }
+        svg{
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+}
+
+@media(max-width:1451px){
+    .postpaid-page .store .row3{
+        .img{
+            width: 35%;
+        }
+        .inner-row{
+            padding:7.5% 7.5% 3.5%;
+            clip-path: polygon(75% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+            color:#fff;
+        }
+        .icon1{
+            width: 45px;
+            margin:0 20px;
+        }
+        h1{
+            font-size: 25px;
+            margin:15px 20px 10px;
+        }
+        .p{
+            font-size: 15px;
+            margin:0 0 25px 20px;
+        }
+        .items{
+            width: 60%;
+        }
+        .item{
+            width: 32%;
+            padding:20px;
+            svg{
+                font-size: 35px;
+                margin-bottom: 12.5px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media(max-width:1000px){
+    .postpaid-page .store .row3{
+        background: url('../../../../assets/Postpaid/row-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding:12.5% 7.5% 45px;
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+        display: flex;
+        flex-direction: column;
+        .img{
+            width: 400px;
+            max-width: 100%;
+            margin:20px auto;
+            position: relative;
+            right: unset;
+            top:unset;
+            transform: translateY(0);
+        }
+        .inner-row{
+            padding:0;
+            clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 0);
+            color:#fff;
+            background: none;
+        }
+        .icon1{
+            width: 40px;
+            margin:0;
+        }
+        h1{
+            font-size: 20px;
+            margin:15px 0px 10px;
+        }
+        .p{
+            margin:0 0 25px 0px;
+        }
+        .items{
+            width: 100%;
+            margin:25px 0 10px;
+        }
+    }
+}
+
+@media(max-width:600px){
+    .postpaid-page .store .row3{
+        margin:45px 0;
+        .item{
+            width: 100%;
+            padding:15px;
+            margin:5px 0;
+        }
+    }
+}
+
+//====================================
+.postpaid-page .store .row4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:5% 0;
+    padding:7.5% 10%;
+    background: url('../../../../assets/Postpaid/row-bg3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    .img{
+        width: 40%;
+        content: url('../../../../assets/Postpaid/img3.png');
+        border-radius: 15px;
+        box-shadow: -12px -12px  #ffdae9;
+        -moz-box-shadow: -12px -12px  #ffdae9;
+        -webkit-box-shadow: -12px -12px  #ffdae9;
+        -o-box-shadow: -12px -12px  #ffdae9;
+        transition: 0.35s ease-in-out;
+        &:hover{
+            transform: scale(1.035);
+        }
+    }
+    .info{
+        width: 40%;
+    }
+    .icon{
+        content: url('../../../../assets/Postpaid/phone.png');
+        width: 100px;
+    }
+    h1{
+        font-size: 30px;
+        margin:10px 0;
+    }
+    p{
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+}
+
+@media(max-width:1451px){
+    .postpaid-page .store .row4{
+        .img{
+            box-shadow: -10px -10px  #ffdae9;
+            -moz-box-shadow: -10px -10px  #ffdae9;
+            -webkit-box-shadow: -10px -10px  #ffdae9;
+            -o-box-shadow: -10px -10px  #ffdae9;
+        }
+        .info{
+            width: 40%;
+        }
+        .icon{
+            width:85px;
+        }
+        h1{
+            font-size:25px;
+            margin:10px 0;
+        }
+        p{
+            font-size: 15px;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media(max-width:767px){
+        .postpaid-page .store .row4{
+            .img{
+                width: 375px;
+                max-width: 100%;
+                margin:20px auto;
+            }
+            .info{
+                width: 100%;
+                margin:20px 0;
+            }
+            .icon{
+                width:85px;
+            }
+            h1{
+                font-size:20px;
+            }
+        }
+    
+}
+
+@-webkit-keyframes hvr-icon-wobble-vertical {
+    16.65% {
+      -webkit-transform: translateY(6px);
+      transform: translateY(6px);
+    }
+    33.3% {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+    49.95% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    66.6% {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateY(1px);
+      transform: translateY(1px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  @keyframes hvr-icon-wobble-vertical {
+    16.65% {
+      -webkit-transform: translateY(6px);
+      transform: translateY(6px);
+    }
+    33.3% {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+    49.95% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    66.6% {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateY(1px);
+      transform: translateY(1px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+
+.postpaid-page .store .row3{
+    .item{
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+    }
+    .item svg{
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+    .item:hover svg{
+        -webkit-animation-name: hvr-icon-wobble-vertical;
+        animation-name: hvr-icon-wobble-vertical;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+    }
+}

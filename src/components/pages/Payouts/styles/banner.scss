@@ -1,0 +1,59 @@
+.payouts-page{
+    overflow: hidden;
+}
+.payouts-page .shared-banner{
+    clip-path: polygon(0 0, 70% 0%, 100% 0, 100% 85%, 73% 98%, 40% 93%, 0 100%, 0% 30%);
+    .other-elements{
+        width: 37.5%;
+        position: absolute;
+        right:7.5%;
+        bottom:0%;
+    }
+    .images{
+        width: 100%;
+    }
+    .img{
+        width: 100%;
+        content: url('../../../../assets/Payouts/banner-img.png');
+        &:hover{
+            filter: brightness(1.1);
+        }
+    }
+}
+
+@media(max-width:1451px){
+    .payouts-page .shared-banner{
+        .other-elements{
+            width: 40%;
+            right:7.5%;
+            bottom:2.5%;
+        }
+    }
+}
+
+@media(max-width:1025px){
+    .payouts-page .shared-banner{
+        .other-elements{
+            bottom:unset;
+            top:50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+@media(max-width:767px){
+    .payouts-page .shared-banner{
+        clip-path: polygon(0 0, 70% 0%, 100% 0, 100% 90%, 64% 100%, 34% 100%, 0 100%, 0% 30%);
+
+        .other-elements{
+            bottom:unset;
+            top:unset;
+            right: unset;
+            transform: translateY(0);
+            position: relative;
+            width: 400px;
+            max-width: 100%;
+            margin:45px auto 5px;
+        }
+    }
+}

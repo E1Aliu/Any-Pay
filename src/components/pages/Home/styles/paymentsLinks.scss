@@ -1,0 +1,48 @@
+.home-page .payments-links .left-right{
+    padding:0 10%;
+    margin:7.5% 0 10%;
+    .col1{
+        width:35%;
+    }
+    .img{
+        width: 45%;
+    }
+}
+
+@media(max-width:1451px){
+    .home-page .payments-links .left-right{
+        .col1{
+            width:40%;
+        }
+        .img{
+            width: 45%;
+        }
+    }
+}
+
+@media(max-width:900px){
+    .home-page .payments-links .left-right{
+        padding:0 7.5%;
+        margin:15px 0;
+        .col1{
+            width:42.5%;
+        }
+        .img{
+            width: 45%;
+        }
+    }
+}
+
+@media(max-width:635px){
+    .home-page .payments-links .left-right{
+        padding:0 7.5%;
+        .col1{
+            width:100%;
+            margin:20px 0;
+        }
+        .img{
+            width:100%;
+            margin:20px 0 35px;
+        }
+    }
+}

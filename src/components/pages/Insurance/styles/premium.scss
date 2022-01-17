@@ -1,0 +1,211 @@
+.insurance-page .premium-row{
+    margin:6.5% 0 5%;
+    padding:0 5%;
+    h5{
+        font-size: 18px;
+        color:#C92E34;
+    }
+    h1{
+        font-size: 25px;
+        width: 600px;
+        max-width: 100%;
+        margin:10px 0 30px;
+    }
+    .inner-row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .img{
+        content: url('../../../../assets/Insurance/img1.png');
+        width: 21%;
+    }
+    .items1{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 72.5%;
+    }
+    .item1{
+        padding:25px;
+        border-radius: 10px;
+        width: 31%;
+        border:1px solid #eee;
+        &:first-child .icon{
+            background: #fff8d0;  
+            color:#f5cc00;
+        }
+        &:nth-child(2) .icon{
+            background: #EFF7FF;  
+            color:#1F6BDC;
+        }
+        &:nth-child(3) .icon{
+            background: #DEFFE6;  
+            color:#3BE641;
+        }
+    }
+    .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        border-radius: 5px;
+    }
+    h6{
+        font-size: 18px;
+        margin:15px 0;
+    }
+    p{
+        font-size: 17px;
+        line-height: 1.7;
+    }
+}
+
+@media(max-width:1450px){
+    .insurance-page .premium-row{
+        h5{
+            font-size: 15px;
+        }
+        h1{
+            font-size: 17.5px;
+            width: 500px;
+            margin:7.5px 0 30px;
+        }
+        .items1{
+            width: 75%;
+        }
+        .item1{
+            padding:20px;
+            width: 31.5%;        
+        }
+        .icon{
+            width: 45px;
+            height: 45px;
+            font-size: 22.5px;
+        }
+        h6{
+            font-size: 15px;
+            margin:15px 0;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+}
+
+
+@media(max-width:1000px){
+    .insurance-page .premium-row{
+        margin:10% 0 7.5%;
+        padding:0 7.5%;
+        h5{
+            text-align: center;
+        }
+        h1{
+            font-size: 17.5px;
+            text-align: center;
+            margin:7.5px auto 30px;
+        }
+        .img{
+            width: 350px;
+            max-width: 100%;
+            margin:25px auto 0;
+        }
+        .items1{
+            width: 100%;
+        }
+    }
+}
+
+
+
+@media(max-width:767px){
+    .insurance-page .premium-row{
+        margin:50px 0 35px;
+        h1{
+            margin:7.5px auto 15px;
+        }
+        .img{
+            width: 300px;
+            max-width: 100%;
+            margin:25px auto 15px;
+        }
+        .items1{
+            justify-content: center;
+        }
+        .item1{
+            margin:12.5px 2.5%;
+            width: 45%;        
+        }
+    }
+}
+
+@media(max-width:525px){
+    .insurance-page .premium-row{
+        .item1{
+            margin:12.5px 0;
+            width: 100%;        
+        }
+    }
+}
+
+.insurance-page .premium-row{
+    .item1{
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s ease-in-out;
+        &:hover{
+            transform: translateY(10px);
+            -webkit-transform: translateY(10px);
+        }
+        &:first-child{
+            &::before{
+                background: #f5cc00;
+            }
+        }
+        &:nth-child(2){
+            &::before{
+                background: #1F6BDC;
+            }
+        }
+        &:nth-child(3){
+            &::before{
+                background: #3BE641;
+            }
+        }
+      }
+    .item1:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 51%;
+        right: 51%;
+        bottom: 0;
+        height: 4px;
+        -webkit-transition-property: left, right;
+        transition-property: left, right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    .item1:hover:before{
+        left: 0;
+        right: 0;
+    }      
+}
+
+@media(max-width:525px){
+    .insurance-page .premium-row{
+        .item1{
+            &:hover{
+                transform: translateY(0px);
+                -webkit-transform: translateY(0px);
+            }
+        }
+    }
+}

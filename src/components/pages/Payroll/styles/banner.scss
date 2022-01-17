@@ -1,0 +1,66 @@
+.payroll-page{
+    overflow: hidden;
+}
+
+.payroll-page .banner-container{
+    position: relative;
+    padding-bottom:20px;
+    .bg{
+        position: absolute;
+        left:0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        background: #f3bec0;
+    }
+    .shared-banner{
+        z-index: 2;
+    }
+    .banner-img1{
+        content: url('../../../../assets/Payroll/banner-img.png');
+        position: absolute;
+        height: 75%;
+        right: 10%;
+        bottom:30px;
+        z-index: 3;
+    }
+}
+
+@media(max-width:1450px){
+    .payroll-page .banner-container{
+        padding-bottom:15px;
+        .banner-img1{
+            height: 72.5%;
+            bottom:25px;
+        }
+    }
+}
+
+@media(max-width:1040px){
+    .payroll-page .banner-container{
+        .banner-img1{
+            height: unset;
+            width: 45%;
+        }
+    }
+}
+@media(max-width:767px){
+    .payroll-page .banner-container{
+        padding-bottom:0px;
+        .shared-banner{
+            padding-bottom: 150px;
+        }
+        .bg{
+            display: none;
+        }
+        .banner-img1{
+           width: 350px;
+           max-width:85%;
+           height: unset;
+           position: relative;
+           right: unset;
+           bottom:unset;
+           margin:-105px auto 0;
+        }
+    }
+}

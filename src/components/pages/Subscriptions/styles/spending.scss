@@ -1,0 +1,156 @@
+.subscriptions-page .spending .row,
+.insurance-page .spending .row{
+    padding:0 10%;
+    margin:7.5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .col2{
+        width: 37.5%;
+    }
+    h1{
+        font-size: 27.5px;
+    }
+    p{
+        line-height: 1.7;
+        font-size: 18px;
+        margin:20px 0 25px;
+    }
+    .img{
+        content: url('../../../../assets/Subscriptions/image3.png');
+        width: 45%;
+    }
+    .images{
+        position: relative;
+        width: 45%;
+    }
+    .bg{
+        left: 0;
+        top:50%;
+        transform: translateY(-50%);
+        content: url('../../../../assets/Subscriptions/image1.png');
+        position: absolute;
+        width: 60%;
+    }
+}
+
+@media(max-width:1421px){
+    .subscriptions-page .spending .row,
+    .insurance-page .spending .row{
+        padding:0 7.5%;
+        .col2{
+            width: 40%;
+        }
+        h1{
+            font-size: 22.5px;
+        }
+        p{
+            font-size: 15px;
+            margin:15px 0 20px;
+        }
+    }
+}
+
+@media(max-width:821px){
+    .subscriptions-page .spending .row,
+    .insurance-page .spending .row{
+        margin:35px 0;
+        .col2{
+            width: 100%;
+            margin:20px auto;
+            text-align: center;
+            a{
+                margin:0 auto;
+            }
+        }
+        h1{
+            font-size: 20px;
+        }
+        p{
+            margin:12px 0 15px;
+        }
+        .img{
+            width: 400px;
+            max-width: 100%;
+            margin:20px auto;
+        }
+        .images{
+            width: 400px;
+            max-width: 100%;
+            margin:20px auto;
+        }
+    }
+    .subscriptions-page .spending .row1,
+    .insurance-page .spending .row1{
+        flex-direction: column-reverse;
+    }
+}
+
+.subscriptions-page .spending .row1,
+.insurance-page .spending .row1{
+    .top{
+        border:1px solid #f3f3f3;
+        background: #fff;
+        box-shadow: rgba(70, 70, 70, 0.1) 2px 2px 5px;
+        width: 350px;
+        max-width: 85%;
+        margin-left: auto;
+        position: relative;
+        z-index: 2;
+        padding:10px 20px;
+        border-radius: 10px;
+    }
+    .inner-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .first{
+        display: flex;
+        align-items: center;
+        flex: 1;
+        margin:10px 15px 10px 0;
+    }
+    .logo{
+        height: 45px;
+        margin-right: 12.5px;
+    }
+    h6{
+        font-size: 16px;
+    }
+    small{
+        font-size: 16px;
+        color:#555;
+    }
+    h5{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1431px){
+    .subscriptions-page .spending .row1,
+    .insurance-page .spending .row1{
+        .top{
+            box-shadow: rgba(133, 133, 133, 0.1) 1.5px 1.5px 3px;
+            width: 250px;
+            padding:8px 17.5px;
+        }
+        .first{
+            margin:7.5px 12.5px 7.5px 0;
+        }
+        .logo{
+            height: 33px;
+            margin-right: 10px;
+        }
+        h6{
+            font-size: 13px;
+        }
+        small{
+            font-size: 12px;
+        }
+        h5{
+            font-size: 13px;
+        }
+    }
+}

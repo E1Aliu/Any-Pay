@@ -1,0 +1,295 @@
+.settlements-page .gateway .slider-container{
+    margin:7.5% 0;
+    padding:0 5%;
+    .icon1{
+        content: url('../../../../assets/Settlements/stars.png');
+        width: 60px;
+    }
+    h1{
+        font-size: 25px;
+        margin:15px 0;
+    }
+    .p{
+        font-size: 17px;
+        line-height: 1.7;
+        width: 500px;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .rec-arrow,
+    .rec-arrow-left,
+    .rec-arrow-right{
+        border:1px solid #ddd !important;
+        box-shadow: none !important;
+        background: #fff !important;
+        width: 52px !important;
+        height: 52px !important;
+        min-width: 52px !important;
+        min-height: 52px !important;
+        max-width: 52px !important;
+        max-height: 52px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        color:#C92E34;
+        &:hover, &:focus, &:active,
+        &:enabled:hover, &:enabled:focus, &:enabled:active,
+        &:disabled:hover, &:disabled:focus, &:disabled:active{
+            background: #C92E34 !important;
+            color:#fff !important;
+            border:1px solid #C92E34 !important;
+        }
+
+    }
+    .rec-dot{
+        display: none;
+    }
+    .slider-item{
+        width: 92.5%;
+        border:1px solid #eee;
+        border-radius: 10px;
+        margin:5px 0;
+        padding:25px;
+        p{
+            font-size: 17px;
+            line-height: 1.7;
+            margin-top: 20px;
+        }
+    }
+    .inline{
+        display: flex;
+        align-items: center;
+    }
+    .icon{
+        margin-right: 20px;
+        width: 50px;
+    }
+    h6{
+        font-size: 18px;
+    }
+}
+
+
+@media(max-width:1431px){
+    .settlements-page .gateway .slider-container{
+        margin:7.5% 0;
+        padding:0 5%;
+        .icon1{
+            width: 45px;
+        }
+        h1{
+            font-size: 20px;
+            margin:15px 0;
+        }
+        .p{
+            font-size: 14px;
+            width: 450px;
+            margin-bottom: 30px;
+        }
+        .rec-arrow,
+        .rec-arrow-left,
+        .rec-arrow-right{
+            width: 45px !important;
+            height: 45px !important;
+            min-width:45px !important;
+            min-height:45px !important;
+            max-width: 45px !important;
+            max-height: 45px !important;
+            font-size: 25px;
+        }
+        .slider-item{
+            width: 95%;
+            margin:5px 0;
+            padding:20px;
+            p{
+                font-size: 14px;
+                margin-top: 15px;
+            }
+        }
+        .icon{
+            margin-right: 15px;
+            width: 42.5px;
+        }
+        h6{
+            font-size: 15px;
+        }
+    }
+}
+
+
+@media(max-width:500px){
+    .settlements-page .gateway .slider-container{
+        margin:45px 0 40px;
+        padding:0 3%;
+        .icon1{
+            width: 42.5px;
+            margin:0 15px;
+        }
+        h1{
+            font-size: 17.5px;
+            margin:15px 0;
+            padding:0 15px;
+        }
+        .p{
+            font-size: 14px;
+            margin:0 0 25px;
+            padding:0 15px;
+        }
+        .rec-arrow,
+        .rec-arrow-left,
+        .rec-arrow-right{
+            width: 38px !important;
+            height: 38px !important;
+            min-width:38px !important;
+            min-height:38px !important;
+            max-width: 38px !important;
+            max-height: 38px !important;
+            font-size: 25px;
+        }
+        .slider-item{
+            width: 97%;
+            margin:5px 0;
+            padding:20px;
+            p{
+                font-size: 14px;
+                margin-top: 15px;
+            }
+        }
+        .icon{
+            margin-right: 15px;
+            width: 42.5px;
+        }
+        h6{
+            font-size: 15px;
+        }
+    }
+}
+
+.settlements-page .gateway .row2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin:5% 0;
+    padding:0 10%;
+    .img{
+        content: url('../../../../assets/Settlements/img1.png');
+        width: 45%;
+    }
+    .info{
+        width: 35%;
+    }
+    h1{
+        font-size: 30px;
+    }
+    p{
+        line-height: 1.7;
+        font-size: 18px;
+        margin:15px 0 25px;
+    }
+
+}
+
+@media(max-width:1431px){
+    .settlements-page .gateway .row2{
+        margin:5% 0;
+        padding:0 10%;
+        .img{
+            width: 45%;
+        }
+        .info{
+            width: 35%;
+        }
+        h1{
+            font-size: 30px;
+        }
+        p{
+            font-size: 18px;
+            margin:15px 0 25px;
+        }
+        
+    }
+}
+
+@media(max-width:1431px){
+    .settlements-page .gateway .row2{
+        margin:5% 0;
+        padding:0 8%;
+        .img{
+            width: 45%;
+        }
+        .info{
+            width: 40%;
+        }
+        h1{
+            font-size: 22.5px;
+        }
+        p{
+            font-size: 15px;
+            margin:12.5px 0 20px;
+        }
+        
+    }
+}
+
+
+
+@media(max-width:767px){
+    .settlements-page .gateway .row2{
+        margin:15px 0 30px;
+        padding:0 7.5%;
+        .img{
+            width: 400px;
+            max-width: 100%;
+            margin:20px auto;
+        }
+        .info{
+            width: 100%;
+            margin:20px auto;
+        }
+        h1{
+            font-size: 20px;
+        }
+        p{
+            margin:10px 0 20px;
+        }
+        
+    }
+}
+
+@-webkit-keyframes hvr-icon-up {
+    0%,
+      50%,
+      100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    25%,
+      75% {
+      -webkit-transform: translateY(-7.6px);
+      transform: translateY(-7.5px);
+    }
+  }
+  @keyframes hvr-icon-up {
+    0%,
+      50%,
+      100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    25%,
+      75% {
+      -webkit-transform: translateY(-7.5px);
+      transform: translateY(-7.5px);
+    }
+}
+
+.settlements-page .gateway .slider-item:hover .icon{
+    -webkit-animation-name: hvr-icon-up;
+    animation-name: hvr-icon-up;
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}

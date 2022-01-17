@@ -1,0 +1,140 @@
+.benefits-page .special-row{
+    margin:5% 0;
+    padding:0 7.5%;
+    h1{
+        font-size: 27.5px;
+        margin-bottom: 55px;
+    }
+    .items1{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .item1{
+        width: 22.5%;
+        display: flex;
+        align-items: center;
+        &:hover{
+            .icon{
+                transform: translateY(-50%);
+            }
+        }
+    }
+    .text{
+        border:1px solid #e5e5e5;
+        border-radius: 10px;
+        padding:25px;
+        height: 100%;
+        flex: 1;
+    }
+    h6{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    p{
+        font-size: 17px;
+        line-height: 1.7;
+    }
+    .icon{
+        background: #C92E34;
+        width: 75px;
+        height: 100px;
+        position: relative;
+        border-radius: 0 10px 10px 0;
+        transition: 0.3s ease-in-out;
+    }
+    .inner-icon{
+        width: 45px;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+@media(max-width:1600px){
+    .benefits-page .special-row{
+        h1{
+            font-size: 25px;
+            margin-bottom: 50px;
+        }
+        .item1{
+            width: 22.5%;
+        }
+        .text{
+            padding:22px;
+        }
+        h6{
+            font-size: 16.5px;
+            margin-bottom: 13.5px;
+        }
+        p{
+            font-size: 16px;
+        }
+        .icon{
+            width: 70px;
+            height: 90px;
+        }
+        .inner-icon{
+            width: 40px;
+        }
+    }
+}
+
+
+@media(max-width:1450px){
+    .benefits-page .special-row{
+        padding:0 5%;
+        h1{
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+        .item1{
+            width: 23%;
+        }
+        .text{
+            padding:17.5px;
+        }
+        h6{
+            font-size: 15px;
+            margin-bottom: 12.5px;
+        }
+        p{
+            font-size: 14px;
+        }
+        .icon{
+            width: 60px;
+            height: 80px;
+        }
+        .inner-icon{
+            width: 35px;
+        }
+    }
+}
+
+
+@media(max-width:1050px){
+    .benefits-page .special-row{
+        h1{
+            margin-bottom: 10px;
+        }
+        .item1{
+            width: 47.5%;
+            margin:15px 0;
+        }
+    }
+}
+
+@media(max-width:600px){
+    .benefits-page .special-row{
+        .item1{
+            width: 100%;
+            margin:12.5px 0;
+            &:hover{
+                .icon{
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,307 @@
+.payment-links-page .home-row,
+.insurance-page .home-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 3% 0 7.5%;
+    margin:10% 0;
+    .info{
+        width:65%;
+    }
+    .img2{
+        content: url('../../../../assets/Home/last.png');
+        width: 27.5%;   
+        margin-right: 5%;
+    }
+    h1{
+        font-size: 35px;
+        width: 50%;
+        margin:0 25px;
+        span{
+            color:#E62E2E;
+        }
+    }
+    .p{
+        font-size: 18px;
+        width: 50%;
+        line-height: 1.7;
+        margin:15px 25px;
+    }
+    .items{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .shared-main-card{
+        width: 30%;
+        margin:25px 0;
+    }
+}
+
+@media(max-width:1451px){
+    .payment-links-page .home-row,
+    .insurance-page .home-row{
+        padding:0 3% 0 5.5%;
+        .info{
+            width:67.5%;
+        }
+        h1{
+            font-size: 25px;
+            width: 60%;
+            margin:0 20px;
+        }
+        .p{
+            font-size: 15px;
+            width: 60%;
+            line-height: 1.7;
+            margin:15px 20px;
+        }
+        .shared-main-card{
+            width: 31.5%;
+            margin:20px 0;
+        }
+    }
+}
+
+@media(max-width:850px){
+    .payment-links-page .home-row,
+    .insurance-page .home-row{
+        padding:0 7.5%;
+        flex-wrap: wrap;
+        .info{
+            width:100%;
+            margin:20px auto;
+        }
+        .img2{
+            width: 350px;
+            max-width: 100%;
+            margin:20px auto;       
+        }
+        h1{
+            font-size: 20px;
+            width: 100%;
+            margin:0;
+            padding:0 20px;
+        }
+        .p{
+            width: 100%;
+            line-height: 1.7;
+            margin:15px 0;
+            padding:0 20px;
+        }
+    }
+}
+
+@media(max-width:625px){
+    .payment-links-page .home-row,
+    .insurance-page .home-row{
+        .items{
+            justify-content: center;
+        }
+        .shared-main-card{
+            width: 45%;
+            margin:10px 2.5%;
+        }
+    }
+}
+
+@media(max-width:500px){
+    .payment-links-page .home-row,
+    .insurance-page .home-row{
+        .shared-main-card{
+            width: 100%;
+            margin:5px 0;
+        }
+    }
+}
+
+//========================================
+.shared-leftright-component{
+    padding:0 7.5%;
+    margin:5% 0 10%;
+    .col1{
+        width: 40%;
+    }
+    .other-elements{
+        width: 525px;
+    }
+    .currency{
+        background: url('../../../../assets/PaymentLinks/bg2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 12.5px;
+        color:#fff;
+        overflow: hidden;
+    }
+    .title{
+        background: linear-gradient(rgba(68, 70, 90, 0.3), rgba(68, 70, 90, 0.3));
+        padding:20px;
+        font-size: 18px;
+        text-align: center;
+    }
+    .search-bar{
+        background: linear-gradient(rgba(68, 70, 90, 0.3), rgba(68, 70, 90, 0.3));
+        margin:35px 40px;
+        display: flex;
+        align-items: center;
+        padding:0 10px 0 17.5px;
+        border-radius: 7.5px;
+        span{
+            font-size: 20px;
+            margin-bottom: -4px;
+            margin-right: 10px;
+        }
+        input{
+            height: 50px;
+            flex:1;
+            background: transparent;
+            border:0;
+            font-size: 16px;
+            color:#ddd;
+            &::placeholder{
+                color:#ddd;
+            }
+            &:focus{
+                outline:none;
+            }
+        }
+    }
+    .item3{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin:40px 40px;
+        h6{
+            font-size: 16px;
+        }
+        .line{
+            background: #1C86FF;
+            height: 2px;
+            flex: 1;
+            margin:0 25px;
+            border-radius: 1px;
+        }
+    }
+    .square-cont{
+        position: relative;
+        h5{
+            font-size: 18px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .square{
+        width: 48px;
+        height: 48px;
+        border-radius: 3px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        background:#18244E;
+    }
+    .item3{
+        &:first-child .square{
+            border:2px solid #1C86FF;
+        }
+        &:nth-child(2) .square{
+            border:2px solid #DB1CFF;
+        }
+        &:nth-child(3) .square{
+            border:2px solid #1CFFB2;
+        }
+        &:nth-child(4) .square{
+            border:2px solid #FFCA1C;
+        }
+        &:nth-child(5) .square{
+            border:2px solid #DC5353;
+        }
+    }
+}
+
+@media(max-width:1451px){
+    .shared-leftright-component{
+        .col1{
+            width: 40%;
+        }
+        .other-elements{
+            width: 45%;
+        }
+        .currency{       
+            border-radius: 10px;
+        }
+        .title{
+            padding:15px;
+            font-size: 15px;
+        }
+        .search-bar{
+            padding:0 7.5px 0 15px;
+            border-radius: 5px;
+            span{
+                font-size: 18px;
+                margin-bottom: -5px;
+                margin-right: 10px;
+            }
+            input{
+                height: 40px;
+                font-size: 14px;
+            }
+        }
+        .item3{
+            margin:35px 30px;
+            h6{
+                font-size: 14px;
+            }
+            .line{
+                margin:0 20px;
+            }
+        }
+        .square-cont{
+            h5{
+                font-size: 15px;
+            }
+        }
+    
+        .square{
+            width: 45px;
+            height: 45px;
+        }
+    }
+}
+
+
+@media(max-width:1000px){
+    .shared-leftright-component{
+        .col1{
+            width: 450px;
+            max-width: 100%;
+            margin:20px auto;
+        }
+        .other-elements{
+            width: 450px;
+            max-width: 100%;
+            margin:20px auto;
+        }
+        .item3{
+            margin:30px 20px 30px 25px;
+            h6{
+                font-size: 13px;
+                text-align: center;
+            }
+            .line{
+                margin:0 15px;
+            }
+        }
+        .square-cont{
+            h5{
+                font-size: 13px;
+            }
+        }
+    
+        .square{
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

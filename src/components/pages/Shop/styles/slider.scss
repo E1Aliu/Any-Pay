@@ -1,0 +1,108 @@
+.shop-page{
+    overflow: hidden;
+}
+.shop-page .slider-container{
+    margin-top: -50px;
+    padding:0 3%;
+    .slider-item{
+        padding:0 25px;
+        width: 100%;   
+        text-align: center;    
+        &:hover a{
+            color:#C92E34;
+        }
+    }
+    .image{
+        margin:0 auto 20px;
+        width: 80%;
+    }
+    a{
+        color:#111;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .rec-arrow,
+    .rec-arrow-left,
+    .rec-arrow-right{
+        border:1px solid #ddd !important;
+        box-shadow: none !important;
+        background: #fff !important;
+        width: 52px !important;
+        height: 52px !important;
+        min-width: 52px !important;
+        min-height: 52px !important;
+        max-width: 52px !important;
+        max-height: 52px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        color:#C92E34;
+        &:hover, &:focus, &:active,
+        &:enabled:hover, &:enabled:focus, &:enabled:active,
+        &:disabled:hover, &:disabled:focus, &:disabled:active{
+            background: #C92E34 !important;
+            color:#fff !important;
+            border:1px solid #C92E34 !important;
+        }
+
+    }
+    .rec-dot{
+        display: none;
+    }
+}
+
+@media(max-width:1431px){
+    .shop-page .slider-container{
+        margin-top: -35px;
+        .slider-item{
+            padding:0 17.5px;   
+        }
+        .image{
+            margin:0 auto 17.5px;
+            width: 85%;
+        }
+        a{
+            font-size: 14px;
+        }
+        .rec-arrow,
+        .rec-arrow-left,
+        .rec-arrow-right{
+            width: 42px !important;
+            height: 42px !important;
+            min-width: 42px !important;
+            min-height: 42px !important;
+            max-width: 42px !important;
+            max-height: 42px !important;
+            font-size: 22px;
+        }
+    }
+}
+
+@media(max-width:800px){
+    .shop-page .slider-container{
+        margin: 45px 0;
+        padding:0 3.5%;
+        .slider-item{
+            padding:0 10px;
+        }
+        .image{
+            margin:0 auto 15px;
+            width: 95%;
+        }
+        a{
+            font-size: 13px;
+        }
+        .rec-arrow,
+        .rec-arrow-left,
+        .rec-arrow-right{
+            width: 35px !important;
+            height: 35px !important;
+            min-width: 35px !important;
+            min-height: 35px !important;
+            max-width: 35px !important;
+            max-height: 35px !important;
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,135 @@
+.blog-page{
+    overflow: hidden;
+}
+.blog-page .banner{
+    background: url('../../../../assets/Blog/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding:8.5% 10% 7.5%;
+    h1{
+        font-size: 40px;
+        margin-bottom: 45px;
+        text-align: center;
+        color:#fff;
+    }
+    .search-bar-container{
+        background: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25));
+        padding:7.5px;
+        width: 650px;
+        max-width: 75%;
+        border-radius: 32.5px;
+        margin:0 auto;
+    }
+    .search-bar{
+        background: #fff;
+        display: flex;
+        align-items: center;
+        padding:5px;
+        border-radius: 27.5px;
+        &:focus-within{
+            span{
+                color:#C92E34;
+            }
+        }
+    }
+    span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22.5px;
+        margin:0 10px 0 20px;
+        color:#777;
+    }
+    input{
+        height: 45px;
+        font-size: 16px;
+        flex: 1;
+        border:0;
+        color:#777;
+        &:focus{
+            outline: none;
+        }
+
+    }
+    button{
+        height: 45px;
+        border-radius: 27.5px;
+        background: #C92E34;
+        cursor: pointer;
+        color:#fff;
+        font-size: 17px;
+        padding:0 30px;
+        border:0;
+    }
+}
+
+@media(max-width:1431px){
+    .blog-page .banner{
+        padding:11% 10% 7.5%;
+        h1{
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+        .search-bar-container{
+            padding:5px;
+            width: 600px;
+            max-width: 75%;
+            border-radius: 30px;
+        }
+        .search-bar{
+            border-radius: 25px;
+            padding:3px
+        }
+        span{
+            font-size: 20px;
+            margin:0 7.5px 0 15px;
+        }
+        input{
+            height: 40px;
+            font-size: 14px;    
+        }
+        button{
+            height: 40px;
+            border-radius: 25px;
+            font-size: 14px;
+            padding:0 27.5px;
+        }
+    }
+}
+
+
+@media(max-width:801px){
+    .blog-page .banner{
+        background-attachment: unset;
+        padding:155px 2.5% 100px;
+        h1{
+            font-size: 25px;
+            margin:0 2.5% 30px;
+        }
+        .search-bar-container{
+            padding:0;
+            width: 400px;
+            max-width: 100%;
+            border-radius: 27.5px;
+        }
+        .search-bar{
+            border-radius: 22px;
+            padding:2px;
+        }
+        span{
+            font-size: 17px;
+            margin:0 5px 0 12.5px;
+        }
+        input{
+            height: 35px;
+            font-size: 13px;    
+        }
+        button{
+            height: 35px;
+            border-radius: 22px;
+            font-size: 14px;
+            padding:0 22.5px;
+        }
+    }
+}

@@ -1,0 +1,152 @@
+.insurance-page{
+    overflow: hidden;
+}
+.insurance-page .banner-container{
+    position: relative;
+    padding-bottom: 15px;
+    .bg{
+        clip-path: ellipse(100% 100% at 35% 0%);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #9fe4df;
+        top:0;
+        left:0;
+    }
+    .shared-banner{
+        clip-path: ellipse(100% 100% at 35% 0%);
+        z-index: 2;
+    }
+
+}
+
+.insurance-page .banner-container .images{
+    position: absolute;
+    top:25%;
+    right: 7.5%;
+    width: 40%;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .img1, .img2, .card{
+        transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s ease-in-out;
+        &:hover{
+            transform: translateY(-11px);
+            -webkit-transform: translateY(-11px);
+        }
+    }
+    .img1{
+        content: url('../../../../assets/Insurance/banner-img1.png');
+        width: 40%;
+        border-radius: 10px;
+    }
+    .img2{
+        content: url('../../../../assets/Insurance/banner-img2.png');
+        width: 75%;
+        border-radius: 10px;
+        margin:0 0 25px auto;
+    }
+    .block{
+        width: 55%;
+    }
+    .card{
+        border:1px solid #eee;
+        background: #fff;
+        border-radius: 10px;
+        width: 85%;
+        padding:20px;
+        display: flex;
+        align-items: center;
+    }
+    .img3{
+        content: url('../../../../assets/Insurance/banner-img3.png');
+        width: 100px;
+        margin-right: 15px;
+    }
+    h6{
+        font-size: 15px;
+        margin-bottom: 7.5px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .text{
+        flex: 1;
+    }
+}
+
+@media(max-width:1450px){
+    .insurance-page .banner-container{
+        padding-bottom: 12.5px;
+    }
+    .insurance-page .banner-container .images{
+        .img1{
+            width: 42.5%;
+        }
+        .img2{
+            width: 75%;
+            margin:0 0 15px auto;
+        }
+        .card{
+            width: 100%;
+            padding:15px;
+        }
+        .img3{
+            width: 75px;
+            margin-right: 13px;
+        }
+        h6{
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+}
+
+
+@media(max-width:1000px){
+    .insurance-page .banner-container .images{
+        .card{            
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        .img3{
+            margin:0 0 10px;
+        }
+    }
+}
+
+
+@media(max-width:767px){
+    .insurance-page .banner-container{
+        padding-bottom: 0px;
+        .shared-banner{
+            padding-bottom: 160px;
+        }
+        .bg{
+            display: none;
+        }
+    }
+    .insurance-page .banner-container .images{
+        .img1, .img2, .card{
+            &:hover{
+                transform: translateY(0px);
+                -webkit-transform: translateY(0px);
+            }
+        }
+        position: relative;
+        top:unset;
+        right: unset;
+        width: 400px;
+        max-width: 96%;
+        margin:-125px auto 0;
+        .card{
+            border:1px solid #eee;
+        }
+    }
+}

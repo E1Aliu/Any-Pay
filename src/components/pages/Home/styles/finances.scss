@@ -1,0 +1,270 @@
+.home-page .finances .row5{
+    margin:12.5% 0 7.5%;
+    padding: 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .rec-carousel-wrapper{
+        width: 27.5%;
+    }
+    .rec-arrow, .rec-arrow-left, .rec-arrow-right{
+        display: none;
+    }
+    .rec-pagination{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .slider-item{
+        margin:10px 0 25px;
+        h1{
+            font-size: 27.5px;
+            margin:0 0 15px;
+        }
+        p{
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+    
+    }
+    .rec-dot{
+        width:17.5px !important;
+        height: 17.5px !important;
+        margin:0 7.5px !important;
+    }
+
+    .left{
+        width: 30%;
+        position: relative;
+    }
+    .img1{
+        content: url('../../../../assets/Home/phone.png');
+        width: 55%;
+        margin-left: 25%;
+        position: relative;
+        border-radius: 40px;
+        z-index: 3;
+    }
+    .bg1{
+        background: linear-gradient(rgba(98, 249, 143, 0.4),rgba(98, 249, 143, 0.4));
+        position: absolute;
+        left:0;
+        top:12.5%;
+        height:70%;
+        width: 100%;
+        border-radius: 0 0 20% 0;
+        z-index: 1;
+    }
+    .bg2{
+        background: linear-gradient(rgba(255, 106, 235, 0.4),rgba(255, 106, 235, 0.4));
+        position: absolute;
+        left:39%;
+        top:7.5%;
+        height: 85%;
+        width: 47.5%;
+        border-radius: 0 20px 20% 0;
+        z-index: 2;
+    }
+    .img2{
+        content: url('../../../../assets/Home/img22.png');
+        width: 25%;
+    }
+}
+
+@media(max-width:1451px){
+    .home-page .finances .row5{
+        margin:12.5% 0 7.5%;
+        .rec-carousel-wrapper{
+            width: 30%;
+        }    
+        .slider-item{
+            margin:5px 0 15px;
+            h1{
+                font-size: 22.5px;
+                margin:0 0 15px;
+            }
+            p{
+                font-size: 15px;
+                margin-bottom: 15px;
+                line-height: 1.7;
+            }
+        
+        }
+        .rec-dot{
+            width:15px !important;
+            height: 15px !important;
+            margin:0 7.5px !important;
+        }
+        .left{
+            width: 30%;
+        }
+        .img1{
+            width: 55%;
+            margin-left: 25%;
+            border-radius:25px;
+        }
+        .bg1{
+            top:12.5%;
+            height:70%;
+            border-radius: 0 0 20% 0;
+        }
+        .bg2{
+            left:39%;
+            top:7.5%;
+            height: 85%;
+            width: 47.5%;
+            border-radius: 0 20px 20% 0;
+        }
+        .img2{
+            width: 25%;
+        }
+    }
+}
+
+@media(max-width:767px){
+    .home-page .finances .row5{
+        margin:35px 0 30px;
+        flex-wrap: wrap;
+        .rec-carousel-wrapper{
+            width: 100%;
+            margin:20px 7.5%;
+        }    
+        .slider-item{
+            margin:5px 0 15px;
+            h1{
+                font-size: 20px;
+                margin:0 0 10px;
+            }
+        
+        }
+        .left{
+            width: 425px;
+            max-width: 100%;
+            margin:20px auto;
+        }
+        .img2{
+            display: none;
+        }
+    }
+}
+
+//==========================================
+.home-page .home-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 3% 0 7.5%;
+    margin:10% 0;
+    .info{
+        width:65%;
+    }
+    .img1{
+        content: url('../../../../assets/Home/phone2.png');
+        width: 27.5%;       
+    }
+    .img2{
+        content: url('../../../../assets/Home/last.png');
+        width: 27.5%;   
+        margin-right: 5%;
+    }
+    h1{
+        font-size: 35px;
+        width: 50%;
+        margin:0 25px;
+        span{
+            color:#E62E2E;
+        }
+    }
+    .p{
+        font-size: 18px;
+        width: 50%;
+        line-height: 1.7;
+        margin:15px 25px;
+    }
+    .items{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .shared-main-card{
+        width: 30%;
+        margin:25px 0;
+    }
+}
+
+@media(max-width:1451px){
+    .home-page .home-row{
+        padding:0 3% 0 5.5%;
+        .info{
+            width:67.5%;
+        }
+        .img1{
+            width: 27.5%;       
+        }
+        h1{
+            font-size: 25px;
+            width: 60%;
+            margin:0 20px;
+        }
+        .p{
+            font-size: 15px;
+            width: 60%;
+            line-height: 1.7;
+            margin:15px 20px;
+        }
+        .shared-main-card{
+            width: 31.5%;
+            margin:20px 0;
+        }
+    }
+}
+
+@media(max-width:850px){
+    .home-page .home-row{
+        padding:0 7.5%;
+        flex-wrap: wrap;
+        .info{
+            width:100%;
+            margin:20px auto;
+        }
+        .img1, .img2{
+            width: 350px;
+            max-width: 100%;
+            margin:20px auto;       
+        }
+        h1{
+            font-size: 20px;
+            width: 100%;
+            margin:0;
+            padding:0 20px;
+        }
+        .p{
+            width: 100%;
+            line-height: 1.7;
+            margin:15px 0;
+            padding:0 20px;
+        }
+    }
+}
+
+@media(max-width:550px){
+    .home-page .home-row{
+        .items{
+            justify-content: center;
+        }
+        .shared-main-card{
+            width: 45%;
+            margin:10px 2.5%;
+        }
+    }
+}
+
+@media(max-width:425px){
+    .home-page .home-row{
+        .shared-main-card{
+            width: 100%;
+            margin:5px 0;
+        }
+    }
+}

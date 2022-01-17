@@ -1,0 +1,145 @@
+.billing-page{
+    overflow: hidden;
+}
+.billing-page .banner-container{
+    padding-bottom: 17px;
+    position: relative;
+    width: 100%;
+    .bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:0;
+        left:0;
+        background: #99F0D3;
+        clip-path: ellipse(100% 100% at 35% 0%);
+    }
+    .shared-banner{
+        position: relative;
+        z-index: 2;
+        clip-path: ellipse(100% 100% at 35% 0%);
+    }
+    .cards{
+        position: absolute;
+        width: 33%;
+        right: 7.5%;
+        bottom:0;
+        z-index: 3;
+    }
+    .inner-card{
+        position: relative;
+        .img{
+            width: 100%;
+            content: url('../../../../assets/Billing/banner-img.png');
+        }
+    }
+    .card{
+        background: #fff;
+        position: absolute;
+        text-align: center;
+        border-radius: 10px;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        padding:25px;
+        width: 330px;
+        box-shadow: 10px 10px  #0280EA;
+        h5{
+            font-size: 19px;
+        }
+        
+    }
+    .logo-container{
+        background: #0280EA;
+        color:#fff;
+        width: fit-content;
+        padding:10px 35px;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        margin:20px auto 0;
+        h6{
+            font-size: 16px;
+        }
+    }
+    .logo{
+        content: url('../../../../assets/Navbar/white-logo.png');
+        width: 35px;
+        margin-right: 10px;
+    }
+}
+
+@media(max-width:1451px){
+    .billing-page .banner-container{
+        padding-bottom: 12.5px;
+        .cards{
+            width: 33%;
+            right: 7.5%;
+            bottom:0;
+        }
+        .card{
+            padding:20px;
+            width: 250px;
+            box-shadow: 7px 7px  #0280EA;
+            h5{
+                font-size: 16px;
+            }
+            
+        }
+        .logo-container{
+            padding:7.5px 30px;
+            border-radius: 25px;
+            margin:15px auto 0;
+            h6{
+                font-size: 14px;
+            }
+        }
+        .logo{
+            width: 30px;
+            margin-right: 10px;
+        }
+    }
+}
+
+
+@media(max-width:767px){
+    .billing-page .banner-container{
+        padding-bottom: 0px;
+        .shared-banner{
+            padding-bottom: 150px;
+            clip-path: ellipse(100% 56% at 37% 44%);
+        }
+        .bg{
+            height: 75%;
+            clip-path: ellipse(100% 56% at 37% 44%);
+        }
+        .cards{
+            position: relative;
+            width: 400px;
+            max-width: 90%;
+            margin:-90px auto 0;
+            right: unset;
+            bottom:unset;
+        }
+        .card{
+            padding:15px;
+            width: 230px;
+            box-shadow: 5px 5px  #0280EA;
+            h5{
+                font-size: 15px;
+            }
+            
+        }
+
+        .logo-container{
+            padding:7px 27.5px;
+            margin:14px auto 0;
+            h6{
+                font-size: 13px;
+            }
+        }
+        .logo{
+            width: 27.5px;
+        }
+    }
+}

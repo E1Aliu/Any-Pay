@@ -1,0 +1,81 @@
+.about-page .community .row2{
+    margin:5% 10%;
+    border:1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 0 0 2.5%;
+    border-radius: 15px;
+    .info{
+        width: 450px;
+        max-width: 40%;
+        padding:25px 0;
+    }
+    .img{
+        content: url('../../../../assets/Benefits/community.png');
+        width: 55%;
+    }
+    h5{
+        font-size: 17px;
+        color:#C92E34;
+    }
+    h1{
+        font-size: 25px;
+        margin:7.5px 0 15px
+    }
+    p{
+        font-size: 17px;
+        line-height: 1.7;
+        margin-bottom: 25px;
+    }
+}
+
+@media(max-width:1450px){
+    .about-page .community .row2{
+        flex-wrap: wrap;
+        border-radius: 12.5px;
+        .info{
+            width: 370px;
+            max-width: 40%;
+            padding:20px 0;
+        }
+        .img{
+            width: 55%;
+        }
+        h5{
+            font-size: 14px;
+        }
+        h1{
+            font-size: 20px;
+            margin:5px 0 15px
+        }
+        p{
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media(max-width:850px){
+    .about-page .community .row2{
+        margin:35px 5%;
+        flex-direction: column;
+        padding:25px 2.5%;
+        border-radius: 10px;
+        .info{
+            width:100%;
+            max-width: 100%;
+            padding: 0;
+            margin-bottom: 35px;
+            text-align: center;
+            a{
+                margin:0 auto;
+            }
+        }
+        .img{
+            width: 400px;
+            max-width: 100%;
+            margin:0 auto;
+        }
+    }
+}

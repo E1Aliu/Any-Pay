@@ -1,0 +1,43 @@
+.postpaid-page {
+    overflow: hidden;
+}
+.postpaid-page .shared-banner{
+    clip-path: ellipse(86% 87% at 37% 12%);
+    padding:12.5% 10%;
+    .other-elements{
+        width: 42.5%;
+        position: absolute;
+        right:7.5%;
+        bottom:0;
+    }
+    .images{
+        width: 100%;
+    }
+    .img{
+        width: 100%;
+        content: url('../../../../assets/Postpaid/banner-img.png');
+    }
+}
+
+@media(max-width:1451px){
+    .postpaid-page .shared-banner{
+        padding:12% 10%;
+        .other-elements{
+            bottom:2%;
+        }
+    }
+}
+@media(max-width:767px){
+    .postpaid-page .shared-banner{
+        clip-path: ellipse(100% 67% at 38% 32%);
+        padding:130px 7.5% 25%;
+        .other-elements{
+            width: 400px;
+            max-width: 100%;
+            margin:45px auto 0;
+            right:unset;
+            bottom:unset;
+            position: relative;
+        }
+    }
+}

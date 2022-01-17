@@ -1,0 +1,59 @@
+.subscriptions-page{
+    overflow: hidden;
+}
+.subscriptions-page .banner-container{
+    padding-bottom: 17px;
+    position: relative;
+    width: 100%;
+    .img{
+        content: url('../../../../assets/Subscriptions/banner-img.png');
+        position: absolute;
+        width: 40%;
+        z-index: 3;
+        right: 5%;
+        bottom: 0;
+    }
+    .bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:0;
+        left:0;
+        background: #94e6ff;
+        clip-path: ellipse(100% 100% at 35% 0%);
+    }
+    .shared-banner{
+        position: relative;
+        z-index: 2;
+        clip-path: ellipse(100% 100% at 35% 0%);
+    }
+}
+
+@media(max-width:1451px){
+    .subscriptions-page .banner-container{
+        padding-bottom: 12.5px;
+    }
+}
+
+@media(max-width:767px){
+    .subscriptions-page .banner-container{
+        padding-bottom: 0px;
+        .img{
+            position: relative;
+            width: 400px;
+            right: unset;
+            max-width: 90%;
+            margin:-75px auto 0;
+            bottom: unset;
+            z-index: 3;
+        }
+        .bg{
+            height: 80%;
+            clip-path: polygon(100% 0, 100% 80%, 75% 100%, 0 100%, 0 0);
+        }
+        .shared-banner{
+            clip-path: polygon(100% 0, 100% 80%, 75% 100%, 0 100%, 0 0);
+            padding-bottom: 30%;
+        }
+    }
+}

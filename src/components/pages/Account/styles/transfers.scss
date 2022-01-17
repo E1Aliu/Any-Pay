@@ -1,0 +1,473 @@
+.account-page .transfers .row1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin:7.5% 0;
+    padding:0 7.5%;
+}
+
+.account-page .transfers .row1 .info{
+    width: 37.5%;
+    h1{
+        font-size: 27.5px;
+    }
+    p{
+        font-size: 17px;
+        line-height: 1.7;
+        margin:15px 0 25px;
+    }
+}
+
+.account-page .transfers .row1 .image{
+    border:1px solid #eee;
+    border-radius: 12.5px;
+    overflow: hidden;
+    width: 50%;
+    .title{
+        background: #E6F7FF;
+        padding:20px 25px;
+        position: relative;
+        width: 100%;
+    }
+    .logo-container{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        left:0;
+        right: 0;
+        top:0;
+        bottom:0;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        h6{
+            font-size: 17px;
+        }
+        .logo{
+            content: url('../../../../assets/Navbar/red-logo2.png');
+            width: 30px;
+            margin-right: 10px;
+        }
+    }
+    .circles{
+        display: flex;
+    }
+    .circle{
+        width: 12.5px;
+        height: 12.5px;
+        border-radius: 50%;
+        margin:0 5px;
+    }
+    .circle1{
+        background: #FC6051;
+    }
+    .circle2{
+        background: #FFC10B;
+    }
+    .circle3{
+        background: #19D238;
+    }
+}
+
+.account-page .transfers .elements{
+    padding:25px 30px;
+    h2{
+        font-size: 24px;
+    }
+    .history{
+        font-size: 16px;
+        color:#00BAF2;
+        margin:5px 0 35px;
+    }
+    .inline1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 35px;
+        p{
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            color:#555;
+            margin: 7.5px 0;
+            padding-right: 20px;
+            svg{
+                font-size: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .items1{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .item1{
+        width: 47.5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin:25px 0;
+    }
+    .left{
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+    .letter{
+        width: 70px;
+        height: 70px;
+        font-size: 35px;
+        font-weight: 500;
+        border-radius: 50%;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #E6F7FF;
+        color:#00BAF2;
+    }
+    .lines{
+        flex: 1;
+    }
+    .line{
+        background: #FFD8D9;
+        margin:7.5px;
+    }
+    .line1{
+        height: 15px;
+        width: 40%;
+    }
+    .line2{
+        height: 7.5px;
+        width: 60%;
+    }
+    button{
+        font-size: 22.5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+        background: none;
+        color:#555;
+    }
+}
+
+@media(max-width:1450px){
+    .account-page .transfers .row1 .info{
+        h1{
+            font-size: 20px;
+        }
+        p{
+            font-size: 14px;
+            margin:12.5px 0 20px;
+        }
+    }
+    
+    .account-page .transfers .row1 .image{
+        border-radius: 10px;
+        .title{
+            padding:15px 20px;
+        }
+        .logo-container{
+            h6{
+                font-size: 14px;
+            }
+            .logo{
+                width: 25px;
+                margin-right: 8px;
+            }
+        }
+        .circle{
+            width: 11px;
+            height: 11px;
+            margin:0 3.5px;
+        }
+    }
+    
+    .account-page .transfers .elements{
+        padding:20px 23.5px;
+        h2{
+            font-size: 17px;
+        }
+        .history{
+            font-size: 13px;
+            margin:5px 0 25px;
+        }
+        .inline1{
+            margin-bottom: 25px;
+            p{
+                font-size: 13px;
+                margin: 6.5px 0;
+                padding-right: 15px;
+                svg{
+                    font-size: 17px;
+                    margin-right: 8px;
+                }
+            }
+        }
+        .item1{
+            margin:20px 0;
+        }
+        .letter{
+            width: 50px;
+            height: 50px;
+            font-size: 25px;
+            margin-right: 8px;
+        }
+        .line{
+            margin:6.5px;
+        }
+        .line1{
+            height: 11px;
+        }
+        .line2{
+            height: 5.5px;
+        }
+        button{
+            font-size: 18px;
+        }
+    }
+}
+
+
+@media(max-width:950px){
+    .account-page .transfers .row1{
+        margin:35px 0;
+        flex-direction: column-reverse;
+    }
+    
+    .account-page .transfers .row1 .info{
+        width: 100%;
+        margin:20px auto;
+    }
+    
+    .account-page .transfers .row1 .image{
+        margin:20px auto;
+        width: 450px;
+        max-width: 100%;
+    }
+    
+}
+
+
+@media(max-width:500px){    
+    .account-page .transfers .elements{
+        padding:20px;
+        .item1{
+            width: 100%;
+            margin:10px 0;
+        }
+    }
+    
+    .account-page .transfers .row1 .image{
+        margin:20px 0 10px;
+        .title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo-container{
+           position: relative;
+           margin:0;
+           left:unset;
+           top: unset;
+           bottom: unset;
+           right: unset;
+        }
+    }
+}
+
+//-----------------------------------------------
+.account-page .transfers .row2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:7.5% 0;
+    padding:0 7.5%;
+}
+.account-page .transfers .row2 .info{
+    width: 35%;
+    h1{
+        font-size: 27.5px;
+    }
+    p{
+        font-size: 17px;
+        line-height: 1.7;
+        margin:15px 0 25px;
+    }
+}
+
+.account-page .transfers .row2 .images{
+    width: 52.5%;
+    position: relative;
+    padding:30px;
+    &:hover{
+        .img{
+            transform: scale(1.15);
+        }
+        .img2{
+            transform: scale(1.15);
+        }
+        .shadow{
+            width: 100%;
+            height: 100%;
+        }
+        .shadow1{
+            top:0;
+            left: 0;
+        }
+        .shadow2{
+            bottom:0;
+            right: 0;    
+        }
+    }
+    .img-cont{
+        width: 100%;
+        position: relative;
+        z-index: 3;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .img{
+        content: url('../../../../assets/Account/img1.png');
+        width: 100%;
+        transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s ease-in-out;
+    }
+    .img2{
+        content: url('../../../../assets/Account/img2.png');
+        width: 100%;
+        transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s ease-in-out;
+    }
+    .squares{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+    }
+    .squares1{
+        top:0;
+        left: 0;
+    }
+    .squares2{
+        bottom:0;
+        right: 0;
+    }
+    .inner-square{
+        position:relative;
+        height: 100%; 
+        width:100%;
+    }
+    .border{
+        border:3px solid #1D68FF;
+        width:100%;
+        height: 100%;
+        position: relative;
+        z-index: 2;
+        border-radius: 5px;
+
+    } 
+    .shadow{
+        position: absolute;
+        width: 70%;
+        height: 70%;
+        background: #90FF5E;
+        transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s ease-in-out;
+        border-radius: 5px;
+    }
+    .shadow1{
+        top: -12.5px;
+        left: -12.5px;
+    }
+    .shadow2{
+        bottom:-12.5px;
+        right: -12.5px;
+    }
+}
+
+.account-page .transfers .row4 .images{
+    .border{
+        border:3px solid #E12027;
+    }
+    .shadow{
+        background: #5E63FF;
+    }
+}
+@media(max-width:1450px){
+    .account-page .transfers .row2 .info{
+        width: 37.5%;
+        h1{
+            font-size: 20px;
+        }
+        p{
+            font-size: 14px;
+            margin:12.5px 0 20px;
+        }
+    }
+    
+    .account-page .transfers .row2 .images{
+        padding:20px;
+        .img-cont{
+            border-radius: 15px;
+        }
+        .squares{
+            width: 75px;
+            height: 75px;
+        }
+        .shadow1{
+            top: -10px;
+            left: -10px;
+        }
+        .shadow2{
+            bottom:-10px;
+            right: -10px;
+        }
+    }
+}
+
+
+@media(max-width:767px){
+    .account-page .transfers .row2{
+        margin:35px 0;
+        padding:0 5%;
+    }
+    .account-page .transfers .row2 .info{
+        width:100%;
+        margin:20px 0 30px;
+    }
+    
+    .account-page .transfers .row2 .images{
+        width: 400px;
+        max-width: 100%;
+        margin:20px auto 30px;
+        padding:17.5px;
+        .img-cont{
+            border-radius: 10px;
+        }
+        .squares{
+            width: 67.5px;
+            height: 67.5px;
+        }
+        .border{
+            border-radius: 4px;
+        } 
+        .shadow{
+            border-radius: 4px;
+        }
+        .shadow1{
+            top: -8px;
+            left: -8px;
+        }
+        .shadow2{
+            bottom:-8px;
+            right: -8px;
+        }
+    }
+}
+
+

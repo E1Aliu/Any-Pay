@@ -1,0 +1,286 @@
+.payments-page .solutions-component, .pricing-page .solutions-component{
+    // border:1px solid red;
+    margin:7.5% 0;
+    padding:0 3%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    .col1{
+        width: 22.5%;
+        margin-right: 40px;
+        h1{
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 19px;
+            line-height: 1.7;
+        }
+    }
+    .slider-container{
+        width: 75%;
+        position: relative;
+        flex:1;
+        padding-left: 130px;
+        // border:2px solid yellow;
+    }
+    .slider-arrows{
+        // border:2px solid orange;
+        position: absolute;
+        bottom:0;
+        left:0;
+        .arrows{
+            display: flex;
+        }
+        button{
+            border:1px solid #ddd;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 27.5px;
+            margin:0 5px;
+            color:#C9060C;
+        }
+    }
+    .slick-track{
+        display: flex;
+        align-items:stretch;
+    }
+    .slick-list{
+        padding:10px;
+       
+    }
+    .slick-slide{
+        height: auto;
+        margin:0;
+        display: flex;
+        flex-direction: column;
+        padding:10px 20px;
+        div{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.payments-page .solutions-component, .pricing-page .solutions-component{
+    .class1{
+        background: #dbefff;
+        .bg{
+            background: #1EC9FF;
+        }
+        .icon{
+            color:#1EC9FF;
+        }
+    }
+    .class2{
+        background: #ffe5fc;
+        .bg{
+            background: #973AA8;
+        }
+        .icon{
+            color: #973AA8;
+        }
+    }
+    .class3{
+        background: #ddfcd4;
+        .bg{
+            background: #4C883B;
+        }
+        .icon{
+            color: #4C883B;
+        }
+    }
+}
+.payments-page .solutions-component .slider-item,
+.pricing-page .solutions-component .slider-item{
+    border-radius: 10px;
+    flex: 1;
+    padding:20px 25px;
+    
+    .icon{
+        position: relative;
+        margin-right: 17px;
+        width: fit-content;
+        margin:0 4px;
+    }
+    .inner-icon{
+        width: 55px;
+        padding:4px 0;
+        border-radius:4px;
+        background: #fff;
+        box-shadow: rgba(255, 255, 255, 0.35) 0px 4px 168px, rgba(255, 255, 255, 0.35) 0px 8px 12px, rgba(255, 255, 255, 0.35) 0px 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32.5px;
+        position: relative;
+    }
+    .bg{
+        width: 55px;
+        height: 42.5px;
+        position: absolute;
+        border-radius: 4px;
+    }
+    .bg1{
+        top:-4px;
+        left:-4px;
+    }
+    .bg2{
+        bottom:-4px;
+        right:-4px;
+    }
+    h6{
+        font-size: 19px;
+        margin:22.5px 0 15px;
+    }
+    p{
+        font-size: 18px;
+        color:#222;
+    }
+}
+
+@media(max-width:1451px){
+    .payments-page .solutions-component,
+    .pricing-page .solutions-component{
+        margin:5% 0;
+        padding:0 3%;
+        .col1{
+            width: 22.5%;
+            margin-right: 35px;
+            h1{
+                font-size:17.5px;
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+        .slider-container{
+            width: 75%;
+            padding-left: 110px;
+        }
+        .slider-arrows{
+            button{
+                width: 35px;
+                height: 35px;
+                font-size: 25px;
+                margin:0 5px;
+            }
+        }
+        .slick-list{
+            padding:0;    
+        }
+        .slick-slide{
+            padding:10px;
+        }
+    }
+
+    .payments-page .solutions-component .slider-item,
+    .pricing-page .solutions-component .slider-item{
+        border-radius: 10px;
+        padding:17px 20px;
+        
+        .icon{
+            margin:0 4px;
+        }
+        .inner-icon{
+            width: 48px;
+            padding:3px 0;
+            font-size: 30px;
+        }
+        .bg{
+            width: 48px;
+            height: 40px;
+        }
+        h6{
+            font-size: 15px;
+            margin:17.5px 0 10px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+}
+
+@media(max-width:1025px){
+    .payments-page .solutions-component,
+    .pricing-page .solutions-component{
+        margin:7.5% 0;
+        padding:0 5%;
+        flex-wrap: wrap;
+        .col1{
+            width: 100%;
+            margin-right:0px;
+            margin-bottom: 20px;
+            h1{
+                margin-bottom: 10px;
+            }
+        }
+        .slider-container{
+            width: 100%;
+            padding-left:0;
+        }
+        .slider-arrows{
+            position: relative;
+            left:unset;
+            bottom:unset;
+            margin:10px 0 5px;
+        }
+        .slick-slide{
+            padding:10px;
+        }
+    }
+      
+}
+    
+    
+@-webkit-keyframes hvr-icon-push {
+    50% {
+      -webkit-transform: scale(0.6);
+      transform: scale(0.6);
+    }
+  }
+  @keyframes hvr-icon-push {
+    50% {
+      -webkit-transform: scale(0.6);
+      transform: scale(0.6);
+    }
+  }
+
+.payments-page .solutions-component .slider-container,
+.pricing-page .solutions-component .slider-container{
+    .slider-item{
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+    }
+    .slider-item .inner-icon svg{
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    .slider-item:hover .inner-icon svg{
+        -webkit-animation-name: hvr-icon-push;
+        animation-name: hvr-icon-push;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: 2;
+        animation-iteration-count: 2;
+    }
+}

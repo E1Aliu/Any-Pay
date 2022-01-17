@@ -1,0 +1,117 @@
+.insurance-page .policy .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:0 7.5%;
+    margin:7.5% 0;
+    .info{
+        width: 550px;
+        max-width: 40%;
+    }
+    h5{
+        font-size: 18px;
+        color:#C92E34;
+    }
+    h1{
+        font-size: 25px;
+        margin:5px 0 20px;
+    }
+    p{
+        font-size: 17px;
+        line-height: 1.7;
+        margin-bottom: 25px;
+    }
+    .img{
+        position: relative;
+        width: 50%;
+        padding: 3.5%;
+        &:hover{
+            .bg{
+                width: 55%;
+            }
+        }
+    }
+    .inner-img1{
+        content: url('../../../../assets/Insurance/img3.png');
+        width: 100%;
+        border-radius: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    .inner-img2{
+        content: url('../../../../assets/Insurance/img4.png');
+        width: 100%;
+        border-radius: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    .bg{
+        position: absolute;
+        width: 35%;
+        transition: 0.3s ease-in-out;
+    }
+    .bg1{
+        content: url('../../../../assets/Insurance/bg1.png');
+        top:0;
+        left:0;
+    }
+    .bg2{
+        content: url('../../../../assets/Insurance/bg2.png');
+        bottom:0;
+        right:0;
+    }
+}
+
+@media(max-width:1450px){
+    .insurance-page .policy .row{
+        .info{
+            width: 500px;
+            max-width: 40%;
+        }
+        h5{
+            font-size: 15px;
+        }
+        h1{
+            font-size: 17.5px;
+            margin:5px 0 15px;
+        }
+        p{
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .inner-img1{
+            border-radius: 15px;
+        }
+        .inner-img2{
+            border-radius: 15px;
+        }
+    }
+}
+
+
+@media(max-width:800px){
+    .insurance-page .policy .row1{
+        flex-direction: column-reverse;
+    }
+    .insurance-page .policy .row{
+        margin:0;
+        .info{
+            width: 100%;
+            max-width: 100%;
+            margin:20px auto;
+        }
+        .img{
+            width: 400px;
+            max-width: 100%;
+            padding: 5.5%;
+            margin:20px auto;
+        }
+        .inner-img1{
+            border-radius: 10px;
+        }
+        .inner-img2{
+            border-radius: 10px;
+        }
+    }
+}

@@ -1,0 +1,449 @@
+.business-page .our-products .row1{
+    margin:5% 0;
+    padding:0 7.5%;
+    h1{
+        font-size: 30px;
+    }
+    .p{
+        font-size: 18px;
+        width: 42.5%;
+        margin:15px 0 30px;
+        color:#444;
+        line-height: 1.7;
+    }
+    .items{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .item{
+        border:1px solid #f3f3f3;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px;
+        border-radius: 10px;
+        padding:25px;
+        width: 22.5%;
+        p{
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    }
+    .icon{
+        height: 100px;
+    }
+    h6{
+        font-size: 18px;
+        margin:20px 0 15px;
+    }
+
+}
+
+@media(max-width:1599px){
+    .business-page .our-products .row1{
+        h1{
+            font-size: 27.5px;
+        }
+        .p{
+            font-size: 17px;
+            width: 45%;
+        }
+        .item{
+            padding:22.5px;
+            p{
+                font-size: 17px;
+            }
+        }
+        .icon{
+            height: 90px;
+        }
+        h6{
+            font-size: 17px;
+        }
+    
+    }
+}
+
+@media(max-width:1451px){
+    .business-page .our-products .row1{
+        padding:0 5%;
+        h1{
+            font-size: 25px;
+        }
+        .p{
+            font-size: 15px;
+            width: 50%;
+            margin:15px 0 30px;
+        }
+        .item{
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px;
+            padding:20px;
+            width: 23.5%;
+            p{
+                font-size: 14px;
+            }
+        }
+        .icon{
+            height: 75px;
+        }
+        h6{
+            font-size: 15px;
+            margin:15px 0;
+        }
+    
+    }    
+}
+
+@media(max-width:1000px){
+    .business-page .our-products .row1{
+        padding:0 7.5%;
+        .p{
+            width: 65%;
+        }
+        .item{
+            width: 47.5%;
+            margin:15px 0;
+        }
+    }
+
+}
+
+@media(max-width:550px){
+    .business-page .our-products .row1{
+        margin:35px 0;
+        h1{
+            font-size: 20px;
+        }
+        .p{
+            width: 100%;
+            margin:15px 0;
+        }
+        .item{
+            width: 100%;
+        }
+        .icon{
+            height: 70px;
+        }
+    }    
+}
+
+
+//===============================================
+.business-page .our-products .row2{
+    margin:10% 0;
+    padding:0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.business-page .our-products .row2 .col2{
+    width: 50%;
+    h1{
+        font-size: 30px;
+    }
+    .p{
+        margin:15px 0 25px;
+        font-size: 18px;
+        line-height: 1.7;
+    }
+    .items2{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 25px;
+    }
+    .shared-main-card{
+        width: 47.5%;
+    }
+}
+.business-page .our-products .row2 .col1{
+    width: 45%;
+    position: relative;
+    .img{
+        position: relative;
+        z-index: 2;
+        content: url('../../../../assets/Business/phone.png');
+        width: 42.5%;
+        margin:0 auto;
+    }
+    .invoice{
+        position: absolute;
+        background: rgb(249, 252, 255);
+        border:1px solid rgb(249, 252, 255);;
+        border-radius: 7.5px;
+        padding:10px 20px 20px;
+        width: 250px;
+        top:50%;
+        transform: translateY(-50%);
+        left:50%;
+        z-index: 3;
+        &:hover{
+            background: #fff;
+        }
+        h5{
+            font-size: 15px;
+            font-weight: normal;
+            margin:5px 0;
+            color:#333;
+        }
+        .input1{
+            margin-bottom: 15px;
+        }
+        .input{
+            font-size: 15px;
+            padding:6px 10px;
+            border-radius: 5px;
+            border:1px solid #eee;
+            background: #fff;
+        }
+        .input2{
+            font-size: 13px;
+            padding:8.5px 7.5px;
+            border-radius: 5px;
+            border:1px solid #eee;
+            background: #fff;
+            margin-bottom: 15px;
+        }
+        button{
+            background: #427cff;
+            border:0;
+            width: 100%;
+            padding:7.5px;
+            text-align: center;
+            cursor: pointer;
+            color:#fff;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+    }
+    .currencies{
+        position: absolute;
+        background: #fff;
+        border:1px solid #eee;
+        border-radius: 7.5px;
+        width: 300px;
+        top:50%;
+        transform: translateY(-50%);
+        left:0;
+        z-index: 1;
+        padding:20px;
+        &:hover .mini-item svg{
+            color:rgb(23, 110, 84);
+        }
+        h6{
+            padding:7.5px 0;
+            border-bottom: 1px solid #ddd;
+            color:#333;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 16px;
+            color:#444;
+            margin-bottom: 15px;
+        }
+        .mini-items{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .mini-item{
+            width: 47.5%;
+            display: flex;
+            align-items: center;
+            font-size: 17px;
+            color:#444;
+            margin:5px 0;
+            svg{
+                font-size: 20px;
+                margin-right: 10px;
+                color:rgb(37, 201, 151);
+            }
+
+        }
+    }
+}
+
+
+@media(max-width:1401px){
+    .business-page .our-products .row2{
+        padding:0 7.5%;
+    }
+    .business-page .our-products .row2 .col2{
+        width: 50%;
+        h1{
+            font-size: 25px;
+        }
+        .p{
+            margin:10px 0 20px;
+            font-size: 15px;
+        }
+        .items2{
+            margin-top: 20px;
+        }
+        .shared-main-card{
+            width: 47.5%;
+        }
+    }
+    .business-page .our-products .row2 .col1{
+        width: 45%;
+        .img{
+            width: 42.5%;
+        }
+        .invoice{
+            padding:7.5px 15px 15px;
+            width: 200px;
+            top:50%;
+            transform: translateY(-50%);
+            left:50%;
+            h5{
+                font-size: 13px;
+                margin:5px 0;
+            }
+            .input1{
+                margin-bottom: 12.5px;
+            }
+            .input{
+                font-size: 13px;
+            }
+            .input2{
+                font-size: 11px;
+                padding:8.5px 7.5px;
+                margin-bottom: 12.5px;
+            }
+            button{
+                padding:7.5px;
+                font-size: 13px;
+            }
+        }
+        .currencies{
+            width: 250px;
+            top:50%;
+            transform: translateY(-50%);
+            left:0;
+            padding:5px 15px 10px;
+            h6{
+                font-size: 14px;
+            }
+            p{
+                font-size: 14px;
+                margin-bottom: 12.5px;
+            }
+            .mini-item{
+                font-size: 14px;
+                margin:5px 0;
+                svg{
+                    font-size: 17.5px;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:991px){
+    .business-page .our-products .row2 .col2{
+        width: 100%;
+        margin:25px 0;
+    }
+    .business-page .our-products .row2 .col1{
+        width: 480px;
+        max-width: 100%;
+        margin:25px auto;
+        .invoice{
+            width: 225px;
+            .input2{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+@media(max-width:500px){
+    .business-page .our-products .row2 .col2{
+        h1{
+            font-size: 20px;
+        }
+        .items2{
+            margin-top: 20px;
+        }
+        .shared-main-card{
+            width:100%;
+            margin:10px 0;
+        }
+    }
+    .business-page .our-products .row2 .col1{
+        margin:5px 0 20px;
+        .img{
+           display: none;
+        }
+        .invoice{
+            width: 230px;
+            max-width: 100%;
+            margin:15px auto;
+            top:unset;
+            transform: translateY(0);
+            left:unset;
+            position: relative;
+        }
+        .currencies{
+            top:unset;
+            transform: translateY(0);
+            left:unset;
+            position: relative;
+            margin:10px auto;
+            max-width: 100%;
+        }
+    }
+}
+
+
+
+//=================================================
+@-webkit-keyframes hvr-icon-push {
+    50% {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+    }
+}
+@keyframes hvr-icon-push {
+    50% {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+    }
+}
+.business-page .our-products .row1{
+    .item{
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        transition: 0.35s ease-in-out;
+    }
+    .item .icon{
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    .item:hover .icon{
+        -webkit-animation-name: hvr-icon-push;
+        animation-name: hvr-icon-push;
+        -webkit-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: 2;
+        animation-iteration-count: 2;
+    }
+    .item:hover{
+        transform: translateY(-10px);
+    }
+}

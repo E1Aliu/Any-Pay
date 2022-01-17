@@ -1,0 +1,236 @@
+.education-page .component .row1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:5% 0;
+    padding:0 5%;
+    .col1{
+        width: 70%;
+    }
+    .img{
+        content: url('../../../../assets/Education/img1.png');
+        width: 25%;
+    }
+    h1{
+        font-size: 25px;
+        width: 600px;
+        max-width: 100%;
+        margin-bottom: 75px;
+    }
+    .items1{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+        &:first-child:hover h6{
+            color:yellow
+        }
+    }
+    .line{
+        position: absolute;
+        width: 100%;
+        left:0;
+        top:50%;
+        transform: translateY(-50%);
+        border-top: 2px dashed #7BA6FC;
+    }
+    .item1{
+        z-index: 2;
+        background: #fff;
+        border:1px solid #eee;
+        box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 2.6px;
+        border-radius: 10px;
+        position: relative;
+        width: 28%;
+        padding:15px 45px 15px 20px;
+        &:hover{
+            .icon{
+                transform: translateY(15px);
+            }
+        }
+    }
+    h6{
+        font-size: 16px;
+    }
+    .icon{
+        position: absolute;
+        width: 60px;
+        top:-20px;
+        right:-20px;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+@media(max-width:1451px){
+    .education-page .component .row1{
+        h1{
+            font-size: 18px;
+            width: 470px;
+            margin-bottom: 65px;
+        }
+        .item1{
+            box-shadow: rgba(0, 0, 0, 0.05) 1.5px 1.5px 2.2px;
+            width: 29%;
+            padding:15px 35px 15px 15px;
+        }
+        h6{
+            font-size: 13px;
+        }
+        .icon{
+            width: 50px;
+            top:-15px;
+            right:-15px;
+        }
+    }
+}
+
+
+@media(max-width:915px){
+    .education-page .component .row1{
+        margin:7.5% 0;
+        padding:0 7.5%;
+        .col1{
+            width: 100%;
+            margin:20px auto;
+        }
+        .img{
+            width: 400px;
+            max-width: 100%;
+            margin:20px auto;
+        }
+        h1{
+            font-size: 17.5px;
+            text-align: center;
+            width: 470px;
+            margin:0 auto 45px;
+        }
+    }
+}
+
+
+@media(max-width:650px){
+    .education-page .component .row1{
+        margin:35px 0;
+        h1{
+            margin:0 auto 15px;
+            font-size: 16px;
+        }
+        .line{
+            display: none;
+        }
+        .item1{
+            width:100%;
+            padding:20px 35px 20px 20px;
+            margin:20px 0;
+        }
+    }
+}
+
+//=====================================================
+.education-page .component .row2{
+    margin:10% 0 7.5%;
+    padding:0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .img{
+        content: url('../../../../assets/Education/img2.png');
+        width: 35%;
+    }
+    .col2{
+        width: 40%;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .item2{
+        margin:30px 0;
+        transition: 0.3s ease-in-out;
+        &:hover{
+            transform: translateX(12.5px);
+        }
+    }
+    h6{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .inline{
+        display: flex;
+        align-items: center;
+    }
+    .icon{
+        width: 60px;
+        margin-right: 20px;
+    }
+    p{
+        flex: 1;
+        font-size: 17px;
+        line-height: 1.7;
+    }
+    a{
+        margin-top: 45px;
+    }
+}
+
+@media(max-width:1451px){
+    .education-page .component .row2{
+        margin:10% 0 7.5%;
+        padding:0 10%;
+        .img{
+            width: 37.5%;
+        }
+        .col2{
+            width: 42.5%;
+        }
+        h1{
+            font-size: 22.5px;
+            margin-bottom: 25px;
+        }
+        .item2{
+            margin:15px 0;
+        }
+        h6{
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        .icon{
+            width: 55px;
+            margin-right: 20px;
+        }
+        p{
+            font-size: 14px;
+        }
+        a{
+            margin-top: 35px;
+        }
+    }
+}
+
+
+@media(max-width:925px){
+    .education-page .component .row2{
+        margin:35px 0;
+        padding:0 7.5%;
+        flex-direction: column-reverse;
+        .img{
+            width:350px;
+            max-width: 100%;
+            margin:20px auto;
+        }
+        .col2{
+            width: 100%;
+            margin:20px auto;
+        }
+        .item2{
+            &:hover{
+                transform: translateX(0px);
+            }
+        }
+        h1{
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+    }
+}

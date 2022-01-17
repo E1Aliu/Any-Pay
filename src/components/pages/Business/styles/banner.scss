@@ -1,0 +1,44 @@
+.business-page {
+    overflow: hidden;
+}
+.business-page .shared-banner{
+    clip-path: ellipse(86% 87% at 37% 12%);
+    padding:12.5% 10%;
+    .other-elements{
+        width: 47.5%;
+        position: absolute;
+        right:7.5%;
+        bottom:5%;
+    }
+    .images{
+        width: 100%;
+    }
+    .img{
+        width: 100%;
+        content: url('../../../../assets/Business/banner-img.png');
+    }
+}
+
+@media(max-width:1451px){
+    .business-page .shared-banner{
+        padding:12% 10%;
+        .other-elements{
+            bottom:10%;
+        }
+    }
+}
+@media(max-width:767px){
+    .business-page .shared-banner{
+        clip-path: none;
+        border-radius: 0 0 55px 0;
+        padding:130px 7.5% 25%;
+        .other-elements{
+            width: 400px;
+            max-width: 100%;
+            margin:25px auto 0;
+            right:unset;
+            bottom:unset;
+            position: relative;
+        }
+    }
+}

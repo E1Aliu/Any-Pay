@@ -1,0 +1,224 @@
+.settlements-page .marketplaces .row3{
+    margin:7.5% 0;
+    h1{
+        font-size: 25px;
+        margin-bottom: 75px;
+        text-align: center;
+    }
+    .images{
+        display: flex;
+        justify-content: space-between;
+        padding:0 15%;
+        background: url('../../../../assets/Settlements/bg1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .img{
+        width: 22.5%;
+        transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s ease-in-out;
+        &:hover{
+            transform: translateY(-12.5px);
+            -webkit-transform: translateY(-12.5px);
+        }
+    }
+    .img1{
+        content: url('../../../../assets/Settlements/phone1.png');
+    }
+    .img2{
+        content: url('../../../../assets/Settlements/phone2.png');
+    }
+    .img3{
+        content: url('../../../../assets/Settlements/phone3.png');
+    }
+}
+
+@media(max-width:1450px){
+    .settlements-page .marketplaces .row3{
+        h1{
+            font-size: 20px;
+            margin-bottom: 55px;
+        }
+        .images{
+            padding:0 12.5%;
+        }
+        .img{
+            width: 22.5%;
+        }
+    }
+}
+
+@media(max-width:500px){
+    .settlements-page .marketplaces .row3{
+        margin:45px 0;
+        h1{
+            font-size: 17.5px;
+            margin-bottom: 25px;
+        }
+        .images{
+            padding:0 3.5%;
+        }
+        .img{
+            width: 30%;
+            &:hover{
+                transform: translateY(0px);
+                -webkit-transform: translateY(0px);
+            }
+        }
+    }
+}
+
+//---------------------------------------------------
+.settlements-page .marketplaces .row4{
+    margin:5% 8% -6%;
+    border-radius: 25px;
+    padding:0 5%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+}
+.settlements-page .marketplaces .row4 .left{
+    width: 50%;
+    padding:35px 0;
+    h1{
+        font-size: 22.5px;
+    }
+    p{
+        font-size: 17px;
+        line-height: 1.7;
+        width: 500px;
+        max-width: 100%;
+        margin:15px 0 25px;
+    }
+    .search-bar{
+        width: 600px;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        border:1px solid #ddd;
+        border-radius: 30px;
+        &:focus-within{
+            border:1px solid #C9060C;
+        }
+    }
+    span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        margin:0 15px 0 25px;
+        color:#C9060C;
+    }
+    input{
+        flex: 1;
+        height: 55px;
+        font-size: 16px;
+        color:#555;
+        border:0;
+        &:focus{
+            outline: none;
+        }
+    }
+    button{
+        cursor: pointer;
+        border:0;
+        color:#fff;
+        background: #C9060C;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        height: 55px;
+        padding:0 30px;
+        font-size: 17px;
+    }
+}
+.settlements-page .marketplaces .row4 .right{
+    width: 37.5%;
+    content: url('../../../../assets/Settlements/instant.png');
+}
+
+@media(max-width:1431px){
+    .settlements-page .marketplaces .row4{
+        margin:5% 8% -7.5%;
+        border-radius: 20px;
+        padding:0 5%;
+    }
+    
+    .settlements-page .marketplaces .row4 .left{
+        width: 50%;
+        padding:30px 0;
+        h1{
+            font-size: 17.5px;
+        }
+        p{
+            font-size: 14px;
+            width: 450px;
+            margin:15px 0 25px;
+        }
+        .search-bar{
+            width: 500px;
+            border-radius: 25px;
+        }
+        span{
+            font-size: 18.5px;
+            margin:0 10px 0 20px;
+        }
+        input{
+            height: 45px;
+            font-size: 14px;
+        }
+        button{
+            border-radius: 25px;
+            height: 45px;
+            padding:0 25px;
+            font-size: 15px;
+        }
+    }
+    .settlements-page .marketplaces .row4 .right{
+        width: 40%;
+    }
+}
+
+
+@media(max-width:800px){
+    .settlements-page .marketplaces .row4{
+        margin:45px 0;
+        border-radius: 0px;
+        padding:0 5%;
+    }
+    
+    .settlements-page .marketplaces .row4 .left{
+        width: 500px;
+        max-width: 100%;
+        margin:20px auto;
+        padding:0;
+        p{
+            font-size: 13px;
+            width: 450px;
+            margin:15px 0 20px;
+        }
+        span{
+            font-size: 17.5px;
+            margin:0 7.5px 0 15px;
+        }
+        input{
+            height: 40px;
+            font-size: 13px;
+        }
+        button{
+            height: 40px;
+            padding:0 20px;
+            font-size: 14px;
+        }
+    }
+    .settlements-page .marketplaces .row4 .right{
+        width: 400px;
+        max-width: 100%;
+        margin:20px auto;
+    }
+}

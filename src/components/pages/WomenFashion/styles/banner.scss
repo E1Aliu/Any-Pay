@@ -1,0 +1,36 @@
+.women-fashion-page{
+    overflow: hidden;
+}
+.shop-banner{
+    background: url('../../../../assets/WomenFashion/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding:10%;
+    text-align: center;
+    color:#fff;
+    h1{
+        font-size: 32.5px;
+    }
+}
+
+@media(max-width:1451px){
+    .shop-banner{
+        background-attachment: fixed;
+        padding:11% 10%;
+        h1{
+            font-size: 25px;
+        }
+    }
+}
+
+
+@media(max-width:767px){
+    .shop-banner{
+        background-attachment: fixed;
+        padding:140px 7.5% 100px;
+        h1{
+            font-size: 22px;
+        }
+    }
+}

@@ -1,0 +1,187 @@
+.marketplaces-page{
+    overflow: hidden;
+}
+.marketplaces-page .banner-container{
+    padding-bottom: 17px;
+    position: relative;
+    width: 100%;
+    .bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:0;
+        left:0;
+        background: #94e6ff;
+        clip-path: ellipse(100% 100% at 35% 0%);
+    }
+    .shared-banner{
+        position: relative;
+        z-index: 2;
+        clip-path: ellipse(100% 100% at 35% 0%);
+    }
+}
+
+@media(max-width:1431px){
+    .marketplaces-page .banner-container{
+        padding-bottom: 12.5px;
+    }
+}
+
+@media(max-width:767px){
+    .marketplaces-page .banner-container{
+        padding-bottom: 0px;
+        .bg{
+            height: 80%;
+            clip-path: polygon(100% 0, 100% 80%, 75% 100%, 0 100%, 0 0);
+        }
+        .shared-banner{
+            clip-path: polygon(100% 0, 100% 80%, 75% 100%, 0 100%, 0 0);
+            padding-bottom: 150px;
+        }
+    }
+}
+
+.marketplaces-page .banner-container .images{
+    width: 600px;
+    max-width: 45%;
+    position: absolute;
+    bottom:-5%;
+    right: 1.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+    .img-cont{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    .card1{
+        width: 47.5%;
+    }
+    .block{
+        width: 47.5%;
+    }
+    .img{
+        width: 100%;
+        transition: 0.3s ease-in-out;
+    }
+    .img1{
+        content: url('../../../../assets/Marketplaces/banner1.png');
+    }
+    .img2{
+        content: url('../../../../assets/Marketplaces/banner2.png');
+    }
+    .img3{
+        content: url('../../../../assets/Marketplaces/banner3.png');
+    }
+    .card{
+        background: #fff;
+        margin:10px 0;
+        overflow: hidden;
+        border-radius: 10px;
+        padding-bottom: 10px;
+        &:hover{
+            .img{
+                transform: scale(1.1);
+                filter: brightness(.8);
+            }
+        }
+    }
+    span, h5, h6{
+        margin:5px 10px;
+    }
+    .inline{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    h5{
+        color:#555;
+        font-weight: normal;
+        font-size: 17px;
+    }
+    h6{
+        font-size: 15px;
+    }
+    span{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:1431px){
+    .marketplaces-page .banner-container .images{
+        width: 500px;
+        max-width: 50%;
+        bottom:-5%;
+        right: 1.5%;
+        .card1{
+            width: 48%;
+        }
+        .block{
+            width: 48%;
+        }
+        .img-cont{
+            margin-bottom: 7.5px;
+        }
+        .img{
+            margin-bottom: 7.5px;
+        }
+        .card{
+            margin:7.5px 0;
+            padding-bottom:7.5px;
+        }
+        span, h5, h6{
+            margin:5px 8px;
+        }
+        h5{
+            font-size: 14px;
+        }
+        h6{
+            font-size: 13px;
+        }
+        span{
+            font-size: 13px;
+        }
+        .card2{
+            .trip{
+                width: 100%;
+                padding:0 7.5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:0;
+            }
+        }
+    }
+}
+
+@media(max-width:1231px){
+    .marketplaces-page .banner-container .images{
+        width: 430px;
+    }
+}
+
+@media(max-width:767px){
+    .marketplaces-page .banner-container{
+        .bg{
+            display: none;
+        }
+    }
+    .marketplaces-page .banner-container .images{
+        width: 500px;
+        max-width: 96%;
+        bottom:unset;
+        right: unset;
+        position: relative;
+        margin:-120px auto 0;
+    }
+}
+
+.marketplaces-page .business .home-row{
+    display: none !important;
+}
+.marketplaces-page .transact .row2{
+    display: none !important;
+}

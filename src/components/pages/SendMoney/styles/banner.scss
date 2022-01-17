@@ -1,0 +1,250 @@
+.send-money-page{
+    overflow: hidden;
+}
+
+.send-money-page .shared-banner{
+    clip-path: ellipse(100% 100% at 50% 0%);
+    padding:12% 8%;
+    .other-elements{
+        position: absolute;
+        width: 600px;
+        right: 7.5%;
+        top:50%;
+        transform: translateY(-50%);
+    }
+}
+.send-money-page .shared-banner .card{
+    padding:20px 25px;
+    border-radius: 15px;
+    background: #fff;
+    h5{
+        font-size: 18px;
+        color:#111;
+        margin-bottom: 45px;
+    }
+    .rangeslider-horizontal{
+        height: 12.5px;
+        flex: 1;
+    }
+    .rangeslider__fill{
+        background-color: #bdffa4;
+    }
+    .rangeslider__handle{
+        width:30px;
+        height: 30px;
+        background-color: #6DFF3A;
+        box-shadow: none;
+        border: 1px solid #5cc934;
+    }
+    .rangeslider__handle-tooltip{
+        width: 80px;
+    }
+    .rangeslider__handle::after{
+        opacity: 0;
+    }
+
+    .inline{
+        display: flex;
+        justify-content: space-between;
+        margin:45px 0 55px;
+    }
+    .arrows{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 45px;
+        color:#6DFF3A;
+        margin:0 10px;
+    }
+    .first{
+        display: flex;
+        align-items: center;
+        border:1px solid #ddd;
+        border-radius: 5px;
+        h4{
+            margin:0 55px 0 10px;
+            font-size: 17px;
+        }
+    }
+    .flags{
+        background: #0A204D;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        padding:10px 20px;
+        color:#fff;
+        font-size: 18px;
+    }
+    .flag{
+        height: 27.5px;
+        margin-right: 15px;
+    }
+    .flag1{
+        content: url('../../../../assets/SendMoney/flag1.png');
+    }
+    .flag2{
+        content: url('../../../../assets/SendMoney/flag2.png');
+    }
+    .line{
+        height: 1px;
+        background: #ddd;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .inline2{
+        display: flex;
+    }
+    .line2{
+        width: 1px;
+        background: #ddd;
+        margin:0 10px;
+    }
+    .col2{
+        flex: 1;
+        padding:25px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h6{
+            font-size: 17px;
+            margin-bottom: 25px;
+        }
+        span{
+            font-size: 18px;
+            color:#C92E34;
+            font-weight: bold;
+        }
+    }
+}
+
+@media(max-width:1451px){
+    .send-money-page .shared-banner{
+        clip-path: ellipse(100% 100% at 50% 0%);
+        padding:12% 8%;
+        .other-elements{
+            width: 410px;
+            right: 7.5%;
+            top:50%;
+            transform: translateY(-50%);
+        }
+    }
+    .send-money-page .shared-banner .card{
+        padding:15px 20px;
+        border-radius: 12.5px;
+        h5{
+            font-size: 15px;
+            margin-bottom: 25px;
+        }
+        .rangeslider-horizontal{
+            height: 7.5px;
+        }
+        .rangeslider__handle{
+            width:20px;
+            height: 20px;
+        }
+        .inline{
+            margin:25px 0 35px;
+        }
+        .arrows{
+            font-size: 32.5px;
+            margin:0 10px;
+        }
+        .first{
+            h4{
+                margin:0 35px 0 7.5px;
+                font-size: 14px;
+            }
+        }
+        .flags{
+            padding:7.5px 15px;
+            font-size: 15px;
+        }
+        .flag{
+            height: 20px;
+            margin-right: 10px;
+        }
+        .line{
+            margin-bottom: 15px;
+        }
+        .line2{
+            margin:0 10px;
+        }
+        .col2{
+            padding:25px 10px;
+            h6{
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+            span{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+
+@media(max-width:900px){
+    .send-money-page .shared-banner{
+        clip-path: ellipse(100% 93% at 43% 62%);
+        padding:120px 7.5% 12.5%;
+        flex-direction: column;
+        .inner-banner{
+            width: 100% !important;
+        }
+        .other-elements{
+            width: 410px;
+            max-width: 100%;
+            position: relative;
+            right: unset;
+            top:unset;
+            transform: translateY(0);
+            margin-top: 35px;
+        }
+    }
+    .send-money-page .shared-banner .card{
+        padding:15px 10px;
+        border-radius: 10px;
+        h5{
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        .inline{
+            margin:25px 0 35px;
+        }
+        .arrows{
+            font-size: 30px;
+            margin:0 7.5px;
+        }
+        .first{
+            h4{
+                margin:0 12.5px 0 5px;
+                font-size: 12px;
+            }
+        }
+        .flags{
+            padding:7.5px 8px;
+            font-size: 12px;
+        }
+        .flag{
+            height: 17.5px;
+            margin-right:7.5px;
+        }
+        .line{
+            margin-bottom: 10px;
+        }
+        .line2{
+            margin:0 10px;
+        }
+        .col2{
+            padding:15px 10px;
+            h6{
+                font-size: 13px;
+                margin-bottom: 15px;
+            }
+            span{
+                font-size: 14px;
+            }
+        }
+    }
+}

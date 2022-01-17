@@ -1,0 +1,183 @@
+.saas-page .payouts .row3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:7.5% 0;
+    padding:0 7.5%;
+    .info{
+        width: 37.5%;
+    }
+    .image{
+        width: 47.5%;
+        content: url('../../../../assets/SaaS/img2.png');
+        border-radius: 15px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 1.8;
+        margin:15px 0 25px;
+    }
+}
+.saas-page .payouts .row4{
+    margin:12.5% 0;
+    position: relative;
+    color:#fff;
+    .inner-row{
+        background: url('../../../../assets/PaymentLinks/bg1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        z-index: 2;
+        padding:11% 10% 3.5%;
+        clip-path: polygon(0 17.5%, 100% 0, 100% 100%, 0% 100%);
+    }
+    .info{
+        width: 40%;
+    }
+    h1{
+        font-size: 27.5px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 1.7;
+        margin:15px 0 25px;
+    }
+    .bg{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left:0;
+        clip-path: polygon(0 17.5%, 100% 0, 100% 100%, 0% 100%);
+    }
+    .bg1{
+        background:#ffbebb;
+        top: -15px;
+    }
+    .bg2{
+        background:#98ccff;
+        bottom: -15px;
+    }
+    .img{
+        content: url('../../../../assets/SaaS/img3.png');
+        position: absolute;
+        right: 0;
+        top:50%;
+        transform: translateY(-50%);
+        width: 42.5%;
+        z-index: 3;
+    }
+}
+
+@media(max-width:1431px){
+    .saas-page .payouts .row3{
+        margin:7.5% 0;
+        .info{
+            width: 40%;
+        }
+        .image{
+            width: 47.5%;
+            border-radius: 12.5px;
+        }
+        h1{
+            font-size: 25px;
+        }
+        p{
+            font-size: 15px;
+            line-height: 1.7;
+            margin:12.5px 0 20px;
+        }
+    }
+    .saas-page .payouts .row4{
+        margin:15% 0;
+        .inner-row{
+            background-attachment: fixed;
+            padding:11% 10% 3.5%;
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+        }
+        .info{
+            width: 40%;
+        }
+        h1{
+            font-size: 22.5px;
+        }
+        p{
+            font-size: 15px;
+            margin:12.5px 0 20px;
+        }
+        .bg{
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+        }
+        .bg1{
+            top: -12px;
+        }
+        .bg2{
+            bottom: -12px;
+        }
+    }
+}
+
+
+@media(max-width:850px){
+    .saas-page .payouts .row3{
+        margin:0px 0 35px;
+        .info{
+            width: 100%;
+            margin:0px auto 20px;
+        }
+        .image{
+            width:400px;
+            max-width: 100%;
+            margin:20px auto;
+        }
+        h1{
+            font-size: 20px;
+        }
+        p{
+            margin:10px 0 20px;
+        }
+    }
+    .saas-page .payouts .row4{
+        margin:35px 0;
+        background: url('../../../../assets/PaymentLinks/bg1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding:15% 0 20px;
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+        .inner-row{
+            background-attachment: unset;
+            background: none;
+            padding:0;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+        .info{
+            width: 100%;
+            padding:0 5%;
+            margin:20px auto;
+            z-index: 2;
+        }
+        h1{
+            font-size: 20px;
+        }
+        p{
+            font-size: 15px;
+            margin:10px 0 20px;
+        }
+        .bg{
+            display: none;
+        }
+        .img{
+            margin:20px auto;
+            right: unset;
+            top:unset;
+            position: relative;
+            transform: translateY(0);
+            max-width: 100%;
+            width: 450px;
+        }
+    }
+}

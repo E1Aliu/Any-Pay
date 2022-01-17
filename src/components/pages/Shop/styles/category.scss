@@ -1,0 +1,200 @@
+.shop-page .category-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:5% 0;
+    padding:0 2.5%;
+    position: relative;
+}
+
+.shop-page .category-row .categories{
+    border:1px solid #ddd;
+    position: absolute;
+    overflow-y: auto;
+    top:0;
+    left:2.5%;
+    height: 100%;
+    border-radius: 10px;
+    width: 22.5%;
+    padding:5px 20px;
+    h4{
+        display: flex;
+        align-items: center;
+        padding:15px 5px;
+        border-bottom: 1px solid #ddd;
+        font-size: 18px;
+        color:#111;
+        svg{
+            font-size: 25px;
+            color:#C92E34;
+            margin-right: 10px;
+        }
+    }
+    .link-container{
+        margin:22.5px 0;
+        a{
+            display: flex;
+            align-items: center;
+        }
+        .image{
+            width: 50px;
+            margin-right: 15px;
+        }
+        h6{
+            font-size: 16.5px;
+            color:#111;
+        }
+    }
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #e0e0e0;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color:  #A1A1A1;
+        border-radius: 10px;
+    }
+}
+
+.shop-page .category-row .right{
+    margin-left: auto;
+    width: 75%;
+    margin-left: auto;
+    .search-container{
+        display: flex;
+        align-items: center;
+        border:1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 25px;
+        padding:2px 15px 0;
+    }
+    input{
+        height: 58px;
+        flex: 1;
+        border: 0;
+        border-radius: 5px;
+        padding:0 7.5px;
+        font-size: 18px;
+        color:#888;
+        &::placeholder{
+            color:#888;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+    span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22.5px;
+        color:#888;
+        margin-right: 5px;
+    }
+    .images{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .img{
+        border-radius: 10px;
+    }
+    .img1{
+        content: url('../../../../assets/Shop/image8.png');
+        width: 54%;
+    }
+    .img2{
+        content: url('../../../../assets/Shop/image9.png');
+        width: 44%;
+    }
+}
+
+@media(max-width:1431px){
+    .shop-page .category-row .categories{
+        padding:5px 20px;
+        h4{
+            padding:12.5px 5px;
+            font-size: 14px;
+            svg{
+                font-size: 20px;
+                margin-right: 7.5px;
+            }
+        }
+        .link-container{
+            margin:20px 0;
+            .image{
+                width: 37.5px;
+                margin-right: 12.5px;
+            }
+            h6{
+                font-size: 13px;
+            }
+        }
+    }
+    
+    .shop-page .category-row .right{
+        .search-container{
+            margin-bottom: 20px;
+            padding:2px 12.5px 0;
+        }
+        input{
+            height: 45px;
+            padding:0 5px;
+            font-size: 15px;
+        }
+        span{
+            font-size: 20px;
+        }
+    }
+}
+
+
+@media(max-width:975px){
+    .shop-page .category-row{
+        margin:35px 0;
+        padding:0 3.5%;
+    }
+    
+    .shop-page .category-row .categories{
+        top:unset;
+        left:unset;
+        position: relative;
+        height: 330px;
+        width: 275px;
+        max-width: 100%;
+        margin:20px auto;
+    }
+    
+    .shop-page .category-row .right{
+        width: 100%;
+        margin:20px 0;
+    }
+}
+
+@media(max-width:550px){
+    .shop-page .category-row{
+        margin:0 5%;
+        .categories{
+            margin-top: 0;
+        }
+    }
+    .shop-page .category-row .right{
+        .search-container{
+            margin-bottom: 15px;
+            padding:1px 10px 0;
+        }
+        input{
+            height: 40px;
+            font-size: 13px;
+        }
+        span{
+            font-size: 18.5px;
+        }
+        .img1, .img2{
+            width: 100%;
+            margin:10px 0;
+        }
+    }
+}

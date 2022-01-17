@@ -1,0 +1,54 @@
+.pricing-page{
+    overflow: hidden;
+    .business .home-row{
+        display: none !important;
+    }
+}
+
+.pricing-page .banner{
+    background: url('../../../../assets/Pricing/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding:10% 7.5% 17.5%;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
+    color:#fff;
+    text-align: center;
+    h1{
+        font-size: 37.5px;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 25px;
+    }
+}
+
+@media(max-width:1431px){
+    .pricing-page .banner{
+        padding:12% 7.5% 20%;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 87.5%);
+        h1{
+            font-size: 27.5px;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 17.5px;
+        }
+    }
+}
+
+
+@media(max-width:800px){
+    .pricing-page .banner{
+        background-attachment: unset;
+        padding:150px 7.5% 222px;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+        h1{
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+}

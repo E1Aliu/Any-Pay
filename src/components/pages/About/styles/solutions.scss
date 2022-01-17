@@ -1,0 +1,227 @@
+.about-page .solutions .row3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding:3.5% 7.5%;
+    margin:5% 0;
+    background: #F5FBFF;
+    .img{
+        content: url('../../../../assets/About/img2.png');
+        width: 32.5%;
+    }
+    .info{
+        width: 50%;
+    }
+    h1{
+        font-size: 22.5px;
+    }
+    .item3{
+        display: flex;
+        align-items: center;
+        margin:30px 0;
+        &:hover{
+            .inner-icon1{
+                bottom:0;
+                right: 0;
+                top:unset;
+                left: unset;
+            }
+            .inner-icon{
+                transform: scale(1.1);
+            }
+        }
+    }
+    p{
+        font-size: 17px;
+        line-height: 1.7;
+        flex: 1;
+    }
+    .icon{
+        position: relative;
+        width: fit-content;
+        padding:6px 0 0 6px;
+        margin-right: 25px;
+    }
+    .inner-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(rgba(255,0,0,0.5), rgba(255,0,0,0.5));
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+    }
+    .inner-icon1{
+        position: absolute;
+        top:0;
+        left:0;
+    }
+    .inner-icon2{
+        position: relative;
+        z-index: 2;
+        color:#fff;
+        font-size: 28px;
+        transition:all 0.3s;
+        -webkit-transition: all 0.3s;
+    }
+}
+
+@media(max-width:1450px){
+    .about-page .solutions .row3{
+        .img{
+            width: 32.5%;
+        }
+        .info{
+            width: 50%;
+        }
+        h1{
+            font-size: 17.5px;
+        }
+        .item3{
+            margin:25px 0;
+        }
+        p{
+            font-size: 14px;
+        }
+        .icon{
+            padding:5px 0 0 5px;
+            margin-right: 20px;
+        }
+        .inner-icon{
+            width: 40px;
+            height: 40px;
+            border-radius: 3.5px;
+        }
+        .inner-icon2{
+            font-size: 25px;
+        }
+    }
+}
+
+
+@media(max-width:900px){
+    .about-page .solutions .row3{
+        padding:25px 7.5%;
+        margin:35px 0;
+        .img{
+            width: 300px;
+            max-width: 100%;
+            margin:20px auto;
+        }
+        .info{
+            width: 100%;
+            margin:20px auto;
+        }
+    }
+}
+
+
+@media(max-width:500px){
+    .about-page .solutions .row3{
+        padding:20px 7.5% 10px;
+        .item3{
+            flex-direction: column;
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        .icon{
+            margin:0 0 10px;
+        }
+    }
+}
+
+//---------------------------------------------------
+.about-page .solutions .row4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:7.5% 0;
+    padding:0 7.5%;
+    .info{
+        width: 37.5%;
+    }
+    h5{
+        font-size: 18px;
+        color:#C92E34;
+    }
+    h1{
+        font-size: 25px;
+        margin:5px 0 15px;
+    }
+    p{
+        font-size: 17px;
+        line-height: 1.7;
+        margin-bottom: 20px;
+    }
+    .img-cont{
+        width: 46%;
+        border-radius: 15px;
+        overflow: hidden;
+        &:hover .img{
+            transform: scale(1.15);
+            -webkit-transform: scale(1.15);
+        }
+    }
+    .img{
+        content: url('../../../../assets/About/img3.png');
+        width: 100%;
+        transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s ease-in-out;
+    }
+}
+
+
+@media(max-width:1450px){
+    .about-page .solutions .row4{
+        .info{
+            width: 40%;
+        }
+        h5{
+            font-size: 15px;
+        }
+        h1{
+            font-size: 18.5px;
+        }
+        p{
+            font-size: 14px;
+            margin-bottom: 17.5px;
+        }
+        .img-cont{
+            border-radius: 12.5px;
+        }
+    }
+}
+
+
+@media(max-width:800px){
+    .about-page .solutions .row4{
+        margin:25px 0;
+        .info{
+            width: 100%;
+            text-align: center;
+            margin:20px auto;
+        }
+        h1{
+            font-size: 17.5px;
+            margin:5px 0 10px;
+        }
+        p{
+            font-size: 15px;
+        }
+        a{
+            margin:0 auto;
+        }
+        .img-cont{
+            margin:20px auto;
+            width: 400px;
+            max-width: 100%;
+        }
+    }
+}

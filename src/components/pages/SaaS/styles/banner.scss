@@ -1,0 +1,69 @@
+.saas-page{
+    overflow: hidden;
+}
+
+.saas-page .banner-container{
+    position: relative;
+    padding-bottom: 20px;
+    .bg{
+        position: absolute;
+        left:0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0 0 150px 150px;
+        background: #ffd15b;
+    }
+    .banner-img{
+        z-index: 3;
+        content: url('../../../../assets/SaaS/banner-img.png');
+        position: absolute;
+        right: 7.5%;
+        bottom:0;
+        width: 37.5%;
+    }
+    .shared-banner{
+        z-index: 2;
+        border-radius: 0 0 150px 150px;
+    }
+}
+
+@media(max-width:1451px){  
+    .saas-page .banner-container{
+        padding-bottom: 15px;
+        .bg{
+            border-radius: 0 0 100px 100px;
+        }
+        .banner-img{
+            right: 5%;
+            bottom:0;
+            width: 40%;
+        }
+        .shared-banner{
+            border-radius: 0 0 100px 100px;
+        }
+    }
+}
+
+
+@media(max-width:767px){  
+    .saas-page .banner-container{
+        padding-bottom: 0;
+        .bg{
+            height: 75%;
+            border-radius: 0 0 70px 0px;
+        }
+        .banner-img{
+            position: relative;
+            right: unset;
+            bottom:unset;
+            width: 400px;
+            max-width: 90%;
+            margin:-25% auto 0;
+        }
+        .shared-banner{
+            border-radius: 0 0 70px 0px;
+            padding-bottom: 30%;
+        }
+    }
+}

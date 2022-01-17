@@ -1,0 +1,175 @@
+.pricing-page .features-row{
+    margin:7.5% 0;
+    padding:0 5.5%;
+    h1{
+        font-size: 27px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    p{
+        font-size: 20px;
+        text-align: center;
+        span{
+            color:#C92E34;
+        }
+    }
+
+    .features{
+        border-bottom:1px solid #ddd;
+        margin:45px 0;
+    }
+    .feaure{
+        display: flex;
+        border-top:1px solid #ddd;
+    }
+    h5{
+        font-size: 18px;
+        width: 24%;
+        display: flex;
+        align-items: center;
+        padding:15px;
+    }
+    .right{
+        flex: 1;
+        display: flex;
+    }
+    .item{
+        width: 25%;
+        padding:20px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-left: 1px solid #ddd;
+    }
+    .icon{
+        height: 27.5px;
+        margin-right: 10px;
+    }
+    h6{
+        font-size: 16px;
+    }
+    a{
+        margin:0 auto;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        color:#C92E34;
+        font-weight: bold;
+        font-size: 18px;
+        svg{
+            font-size: 25px;
+            margin-left: 7.5px;
+        }
+    }
+}
+
+@media(max-width:1431px){
+    .pricing-page .features-row{
+        padding:0 5%;
+        h1{
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+        p{
+            font-size:17px;
+        }
+    
+        .features{
+            margin:40px 0;
+        }
+        h5{
+            font-size: 15px;
+            padding:10px;
+        }
+        .item{
+            padding:15px 10px;
+        }
+        .icon{
+            height: 22.5px;
+            margin-right: 7px;
+        }
+        h6{
+            font-size: 13px;
+        }
+        a{
+            font-size: 18px;
+            svg{
+                font-size: 25px;
+                margin-left: 7.5px;
+            }
+        }
+    }
+}
+
+@media(max-width:1025px){
+    .pricing-page .features-row{
+        margin:10% 0;
+        padding:0 5%;
+        h1{
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+        p{
+            font-size:17px;
+        }
+    
+        .features{
+            margin:30px 0;
+        }
+        .feaure{
+            flex-wrap: wrap;
+            padding:20px 0
+        }
+        h5{
+            width: 100%;
+            padding:0;
+           justify-content: center;
+           margin-bottom: 10px;
+        }
+        .right{
+            flex: unset;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        .item{
+            width: 50%;
+            padding:0;
+            bordeR:0;
+            margin:10px 0;
+        }
+    }
+}
+
+@media(max-width:525px){
+    .pricing-page .features-row{
+        margin:50px 0;
+        padding:0 5%;
+        h1{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size:15px;
+        }
+    
+        .features{
+            margin:20px 0;
+        }
+        .feaure{
+            padding:20px 0
+        }
+        h5{
+            text-align: center;
+        }
+        .item{
+            width: 100%;
+            margin:12.5px 0;
+        }
+        a{
+            font-size: 15px;
+            svg{
+                font-size: 20px;
+            }
+        }
+    }
+}

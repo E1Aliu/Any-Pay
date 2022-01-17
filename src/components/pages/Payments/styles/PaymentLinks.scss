@@ -1,0 +1,107 @@
+.payments-page .payment-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 3% 0 7.5%;
+    margin:10% 0;
+    .info{
+        width:60%;
+    }
+    .img1{
+        content: url('../../../../assets/Payments/img3.png');
+        width: 35%;       
+    }
+    h1{
+        font-size: 33px;
+        width: 50%;
+        margin:0 25px;
+        span{
+            color:#E62E2E;
+        }
+    }
+    .p{
+        font-size: 18px;
+        width: 50%;
+        line-height: 1.7;
+        margin:15px 25px;
+    }
+    .items{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .shared-main-card{
+        width: 31.5%;
+        margin:25px 0;
+    }
+}
+
+@media(max-width:1451px){
+    .payments-page .payment-links{
+        padding:0 3% 0 5.5%;
+        h1{
+            font-size: 25px;
+            width: 60%;
+            margin:0 20px;
+        }
+        .p{
+            font-size: 15px;
+            width: 60%;
+            line-height: 1.7;
+            margin:15px 20px;
+        }
+        .shared-main-card{
+            width: 31.5%;
+            margin:20px 0;
+        }
+    }
+}
+
+@media(max-width:1000px){
+    .payments-page .payment-links{
+        padding:0 7.5%;
+        flex-wrap: wrap;
+        .info{
+            width:100%;
+            margin:20px auto;
+        }
+        .img1, .img2{
+            width: 350px;
+            max-width: 100%;
+            margin:20px auto;       
+        }
+        h1{
+            font-size: 20px;
+            width: 100%;
+            margin:0;
+            padding:0 20px;
+        }
+        .p{
+            width: 100%;
+            line-height: 1.7;
+            margin:15px 0;
+            padding:0 20px;
+        }
+    }
+}
+
+@media(max-width:625px){
+    .payments-page .payment-links{
+        .items{
+            justify-content: center;
+        }
+        .shared-main-card{
+            width: 45%;
+            margin:10px 2.5%;
+        }
+    }
+}
+
+@media(max-width:475px){
+    .payments-page .payment-links{
+        .shared-main-card{
+            width: 100%;
+            margin:5px 0;
+        }
+    }
+}

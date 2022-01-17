@@ -1,0 +1,242 @@
+.apps-page{
+    overflow: hidden;
+    .features .row1{
+        display: none;
+    }
+}
+.shared-apps-banner{
+    position: relative;
+    width: 100%;
+    padding-bottom: 7.5%;
+    .inner-banner{
+        background:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('../../../assets/Apps/banner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding:12.5% 3.5%;
+        color:#fff;
+        width: 100%;
+        border-radius: 0 0 35% 10%;
+    }
+    h1{
+        font-size: 40px;
+        margin:15px 0 20px;
+    }
+    h5, p{
+        font-size: 20px;
+    }
+    .img{
+        width: 35%;
+        position: absolute;
+        right: 3.5%;
+        top:50%;
+        transform: translateY(-50%);
+        content: url('../../../assets/Apps/banner-img.png');
+    }
+    .cards{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 3.5%;
+        margin-top: -50px;
+    }
+    .card{
+        width: 15%;
+        display: flex;
+        a{
+            background: #fff;
+            border-radius: 10px;
+            padding:20px 15px;
+            border:1px solid #f5f5f5;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        h6{
+            font-size: 17px;
+            color:#111;
+            text-align: center;
+        }
+        svg{
+            font-size: 30px;
+        }
+        .inner-icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.shared-apps-banner{
+    .class1{
+        .inner-icon{
+            color: #38ABF8;
+        }
+        a:before{
+            background: #38ABF8;
+        }
+    }
+    .class2{
+        .inner-icon{
+            color: #FB40CF;
+        }
+        a:before{
+            background: #FB40CF;
+        }
+    }
+    .class3{
+        .inner-icon{
+            color: #3EB97B;
+        }
+        a:before{
+            background: #3EB97B;
+        }
+    }
+    .class4{
+        .inner-icon{
+            color:#FF3939;
+        }
+        a:before{
+            background: #FF3939;
+        }
+    }
+    .class5{
+        .inner-icon{
+            color:#FFC74E;
+        }
+        a:before{
+            background: #FFC74E;
+        }
+    }
+    .class6{
+        .inner-icon{
+            color:#37C8FF;
+        }
+        a:before{
+            background: #37C8FF;
+        }
+    }
+}
+
+@media(max-width:1451px){
+    .shared-apps-banner{
+        padding-bottom: 7.5%;
+        .inner-banner{
+            padding:12.5% 3.5%;
+            border-radius: 0 0 35% 10%;
+        }
+        h1{
+            font-size: 30px;
+            margin:5px 0 12.5px;
+        }
+        h5, p{
+            font-size: 15px;
+        }
+        .img{
+            width: 35%;
+            right: 3.5%;
+            top:50%;
+            transform: translateY(-50%);
+        }
+        .cards{
+            width: 60%;
+            padding-left: 3.5%;
+            margin-top: -40px;
+        }
+        .card{
+            width: 15.5%;
+            a{
+                border-radius: 7.5px;
+                padding:15px 10px;
+            }
+            h6{
+                font-size: 14px;
+            }
+            svg{
+                font-size: 27.5px;
+            }
+            .inner-icon{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+
+@media(max-width:950px){
+    .shared-apps-banner{
+        padding:125px 7.5% 45px;
+        background:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('../../../assets/Apps/banner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        .inner-banner{
+            padding:0;
+            border-radius: 0;
+            background: none;
+            text-align: center;
+            margin:20px auto;
+            width: 100%;
+        }
+        h1{
+            font-size: 20px;
+            margin:5px 0 12.5px;
+        }
+        .img{
+            width: 400px;
+            max-width: 100%;
+            margin:20px auto;
+            right: unset;
+            top:unset;
+            position: relative;
+            transform: translateY(0%);
+        }
+        .cards{
+            width: 100%;
+            padding-left: 0%;
+            margin:20px 0;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .card{
+            width: 130px;
+            margin:7.5px 5px;
+        }
+    }
+}
+
+.shared-apps-banner .cards{
+    a{
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+        &:hover{
+            transform: translateY(-7.5px);
+        }
+    }
+    a:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 51%;
+        right: 51%;
+        bottom: 0;
+        height: 4px;
+        -webkit-transition-property: left, right;
+        transition-property: left, right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    a:hover:before{
+        left: 0;
+        right: 0;
+    }
+}

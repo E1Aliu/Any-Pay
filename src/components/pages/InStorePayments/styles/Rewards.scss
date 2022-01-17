@@ -1,0 +1,197 @@
+.in-store-payments-page .rewards .row1{
+    margin:5% 0;
+    padding:0 7.5%;
+    h1{
+        font-size: 25px;
+        width:480px;
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    .items1{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .item1{
+        border:1px solid #e5e5e5;
+        width: 30%;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        &:hover .img{
+            transform:scale(1.1);
+            -webkit-transform:scale(1.1);
+        }
+    }
+    .img-cont{
+        width: 100%;
+        overflow: hidden;
+    }
+    .img{
+        width: 100%;
+        transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s ease-in-out;
+    }
+    .text{
+        padding:25px;
+        flex: 1;
+    }
+    h6{
+        font-size: 19px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 1.7;
+        margin:20px 0 55px;
+    }
+    a{
+        position: absolute;
+        bottom:20px;
+        display: flex;
+        align-items: center;
+        font-size: 17px;
+        font-weight: 500;
+        color:#EC3434;
+        svg{
+            font-size: 20px;
+            margin-left: 7.5px;
+        }
+    }
+
+}
+
+@media(max-width:1450px){
+    .in-store-payments-page .rewards .row1{
+        h1{
+            font-size: 20px;
+            width:400px;
+            margin-bottom: 45px;
+        }
+        .item1{
+            width: 31%;
+        }
+        .text{
+            padding:20px;
+        }
+        h6{
+            font-size: 15.5px;
+        }
+        p{
+            font-size: 15px;
+            margin:15px 0 45px;
+        }
+        a{
+            bottom:15px;
+            font-size: 14px;
+            svg{
+                font-size: 17.5px;
+                margin-left: 6.5px;
+            }
+        }
+    
+    }
+}
+
+@media(max-width:950px){
+    .in-store-payments-page .rewards .row1{
+        margin:45px 0 30px;
+        h1{
+            text-align: center;
+            margin:0 auto 15px;
+        }
+        .items1{
+            justify-content: center;
+        }
+        .item1{
+            width: 47%;
+            margin:15px 1.5%;
+        }    
+    }
+}
+
+
+@media(max-width:610px){
+    .in-store-payments-page .rewards .row1{
+        h1{
+            margin:0 auto 15px;
+            font-size: 17.5px;
+        }
+        .item1{
+            width: 350px;
+            max-width: 100%;
+            margin:15px auto;
+        }    
+    }
+}
+
+//-----------------------------------------------------
+.in-store-payments-page .rewards .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin:7.5% 0;
+    padding:0 7.5%;
+    .img{
+        width: 47.5%;
+    }
+    .img1{
+        content: url('../../../../assets/InStorePayments/img4.png');
+    }
+    .img2{
+        content: url('../../../../assets/InStorePayments/img5.png');
+    }
+    .info{
+        width: 35%;
+    }
+    h1{
+        font-size: 27.5px;
+    }
+    p{
+        font-size: 17px;
+        line-height: 1.7;
+        margin:15px 0 25px;
+    }
+}
+
+@media(max-width:1450px){
+    .in-store-payments-page .rewards .row{
+        .info{
+            width: 37.5%;
+        }
+        h1{
+            font-size: 22.5px;
+        }
+        p{
+            font-size: 14px;
+            margin:12.5px 0 20px;
+        }
+    }
+}
+
+
+@media(max-width:750px){
+    .in-store-payments-page .rewards .row2{
+        flex-direction: column-reverse;
+    }
+    .in-store-payments-page .rewards .row{
+        margin:0;
+        .img{
+            width: 400px;
+            max-width: 100%;
+            margin:22.5px auto;
+        }
+        .info{
+            margin:22.5px auto;
+            width: 100%;
+        }
+        h1{
+            font-size: 20px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+}

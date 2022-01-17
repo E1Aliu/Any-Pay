@@ -1,0 +1,363 @@
+.subscriptions-page .customer .row3{
+    position: relative;
+    padding:2.5% 0;
+    margin:5% 0;
+}
+.subscriptions-page .customer .row3 .inner-row3{
+    background: url('../../../../assets/PaymentLinks/bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color:#fff;
+    padding:12.5% 7.5% 5% 57.5%;
+    clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
+    h1{
+        font-size: 27.5px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 1.7;
+        margin:20px 0 30px;
+    }
+}
+.subscriptions-page .customer .row3 .items3{
+    position: absolute;
+    top:50%;
+    left: 5%;
+    transform: translateY(-50%);
+    width: 700px;
+    max-width: 45%;
+    color:#fff;
+    background: url('../../../../assets/PaymentLinks/bg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:35px 35px 35px 45px;
+    border-radius: 15px;
+    box-shadow: 10px -10px  #d7fcfc;   
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .item3{
+        width: 45%;
+        margin:25px 0;
+        &:nth-child(1) .icon{
+            background: linear-gradient(rgba(46, 201, 108, 0.25),rgba(46, 201, 108, 0.25));
+            .bg{
+                background: linear-gradient(rgba(46, 201, 108, 0.25),rgba(46, 201, 108, 0.25));
+            }
+            
+        }
+        &:nth-child(2) .icon{
+            background: linear-gradient(rgba(242, 175, 233, 0.25),rgba(242, 175, 233, 0.25));
+            .bg{
+                background: linear-gradient(rgba(242, 175, 233, 0.25),rgba(242, 175, 233, 0.25));
+            }
+            
+        }
+        &:nth-child(3) .icon{
+            background: linear-gradient(rgba(255, 41, 41, 0.25),rgba(255, 41, 41, 0.25));
+            .bg{
+                background: linear-gradient(rgba(255, 41, 41, 0.25),rgba(255, 41, 41, 0.25));
+            }
+            
+        }
+        &:nth-child(4) .icon{
+            background: linear-gradient(rgba(41, 255, 175, 0.25),rgba(41, 255, 175, 0.25));
+            .bg{
+                background: linear-gradient(rgba(41, 255, 175, 0.25),rgba(41, 255, 175, 0.25));
+            }
+            
+        }
+    }
+    .icon{
+        width: 50px;
+        height: 50px;
+        font-size: 32.5px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        svg{
+            position: relative;
+            z-index: 2;
+        }
+    }
+    .bg{
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        position: absolute;
+        left:-7.5px;
+        top:-7.5px;
+    }
+    h6{
+        font-size: 17px;
+        margin:15px 0 15px -7.5px;
+    }
+    p{
+        line-height: 1.6;
+        font-size: 16px;
+        margin-left: -7.5px;
+    }
+}
+
+@media(max-width:1431px){
+    .subscriptions-page .customer .row3{
+        padding:3.5% 0;
+    }
+    .subscriptions-page .customer .row3 .inner-row3{
+        h1{
+            font-size: 20px;
+        }
+        p{
+            font-size: 15px;
+            margin:15px 0 20px;
+        }
+    }
+    .subscriptions-page .customer .row3 .items3{
+        padding:15px 20px 15px 30px;
+        border-radius: 12.5px;
+        box-shadow: 7px -7px  #d7fcfc;   
+        .item3{
+            margin:20px 0;
+        }
+        .icon{
+            width: 40px;
+            height: 40px;
+            font-size: 27px;
+        }
+        .bg{
+            width: 40px;
+            height: 40px;
+            left:-5px;
+            top:-5px;
+        }
+        h6{
+            font-size: 14px;
+            margin:12px 0 12px -5px;
+        }
+        p{
+            font-size: 14px;
+            margin-left: -5px;
+        }
+    }
+}
+@media(max-width:1000px){
+    .subscriptions-page .customer .row3{
+        padding:35px 7.5%;
+        background: url('../../../../assets/PaymentLinks/bg1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin:45px 0;
+    }
+    .subscriptions-page .customer .row3 .inner-row3{
+        background: none;
+        padding:0;
+        margin:20px 0 35px;
+        clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+        h1{
+            font-size: 17px;
+        }
+        p{
+            font-size: 15px;
+            margin:15px 0 20px;
+        }
+    }
+    .subscriptions-page .customer .row3 .items3{
+        top:unset;
+        left: unset;
+        transform: translateY(0%);
+        width: 100%;
+        max-width: 100%;
+        padding:0;
+        border-radius: 0px;
+        box-shadow: none;   
+        position: relative;
+        background: none;
+        .item3{
+            width: 45%;
+            margin:20px 0;
+        }
+    }
+}
+@media(max-width:555px){
+    .subscriptions-page .customer .row3 .inner-row3{
+        p{
+            font-size: 14px;
+        }
+    }
+    .subscriptions-page .customer .row3 .items3{
+        .item3{
+            width: 100%;
+            margin:20px 0;
+        }
+    }
+}
+
+//last-row------------------------
+.subscriptions-page .customer .row4{
+    margin:7.5% 0;
+    padding:0 7.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .info{
+        width: 30%;
+    }
+    .items4{
+        width: 65%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .item4{
+        width: 30%;
+        transition: 0.3s ease-in-out;
+        &:hover{
+            transform: translateY(-10px);
+            h6{
+                color:#6844b0;
+            }
+        }
+    }
+    .img{
+        width: 185px;
+        max-width: 100%;
+        margin:0 auto 15px;
+    }
+    h6{
+        font-size: 17px;
+        text-align: center;
+    }
+    h1{
+        font-size: 27.5px;
+        margin-bottom: 20px;
+    }
+    p{
+        line-height: 1.7;
+        font-size: 18px;
+        color:#444;
+    }
+}
+
+
+@media(max-width:1431px){
+    .subscriptions-page .customer .row4{
+        flex-wrap: wrap;
+        .img{
+            width: 145px;
+            max-width: 100%;
+
+        }
+        h6{
+            font-size: 15px;
+        }
+        h1{
+            font-size: 22.5px;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+}
+
+@media(max-width:1025px){
+    .subscriptions-page .customer .row4{
+        margin:40px 0;
+        .info{
+            width: 100%;
+            text-align: center;
+            margin:10px 0;
+        }
+        .items4{
+            width: 100%;
+            margin:10px 0;
+        }
+    }
+}
+
+@media(max-width:550px){
+    .subscriptions-page .customer .row4{
+        .items4{
+            width: 100%;
+            margin:5px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .item4{
+            width: 180px;
+            margin:15px 10px;
+
+            &:hover{
+                transform: translateY(0px);
+                h6{
+                    color:#000;
+                }
+            }
+        }
+        .img{
+            width: 125px;
+            margin:0 auto 10px;
+        }
+        h6{
+            font-size: 14px;
+        }
+        h1{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.subscriptions-page .business .home-row{
+    display: none !important;
+}
+
+
+@-webkit-keyframes hvr-icon-up {
+    0%,
+      50%,
+      100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    25%,
+      75% {
+      -webkit-transform: translateY(-7.5px);
+      transform: translateY(-7.5px);
+    }
+  }
+  @keyframes hvr-icon-up {
+    0%,
+      50%,
+      100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    25%,
+      75% {
+      -webkit-transform: translateY(-7.5px);
+      transform: translateY(-7.5px);
+    }
+  }
+.subscriptions-page .customer .row3{
+    .item3:hover .icon{
+        -webkit-animation-name: hvr-icon-up;
+        animation-name: hvr-icon-up;
+        -webkit-animation-duration: 0.75s;
+        animation-duration: 0.75s;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@media(max-width:550px){
+    .subscriptions-page .customer .row3{
+        .item3:hover .icon{
+            -webkit-animation-name: none;
+            animation-name: none;
+
+        }
+    }
+}

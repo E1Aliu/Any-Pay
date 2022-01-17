@@ -1,0 +1,200 @@
+.events-page .past-events{
+    margin: 7.5% 0;
+    padding:0 6%;
+    h1{
+        font-size: 30px;
+        margin-bottom:5px;
+    }
+    .items1{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .link-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+}
+.events-page .past-events .item1{
+    width: 30%;
+    border:1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin:30px 0;
+    .img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .text{
+        flex: 1;
+        width: 90%;
+        background: #fff;
+        margin:-30px auto 0;
+        position: relative;
+        z-index: 2;
+        padding: 12.5px;
+        border-radius: 10px;
+        position: relative;
+    }
+    .inline{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        p{
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            margin:5px;
+            svg{
+                font-size: 16px;
+                margin-right: 5px;
+            }
+        }
+    }
+    h6{
+        font-size: 17.5px;
+        margin:15px 5px;
+    }
+    .p{
+        font-size: 17px;
+        line-height: 1.7;
+        margin:0 5px 75px 5px;
+    }
+    a{
+        position: absolute;
+        bottom:20px;
+        left:20px;
+    }
+}
+
+@media(max-width:1600px){
+    .events-page .past-events .item1{
+        width: 31.5%;
+    }
+}
+
+@media(max-width:1450px){
+    .events-page .past-events{
+        padding:0 5%;
+        h1{
+            font-size: 25px;
+        }
+        .link-container{
+            margin-top: 25px;
+        }
+    }
+    .events-page .past-events .item1{
+        margin:20px 0;
+        .text{
+            margin:-25px auto 0;
+            padding: 10px;
+        }
+        .inline{
+            p{
+                font-size: 13px;
+                svg{
+                    font-size: 14px;
+                }
+            }
+        }
+        h6{
+            font-size: 14.5px;
+            margin:10px 5px;
+        }
+        .p{
+            font-size: 14px;
+            margin:0 5px 65px 5px;
+        }
+        a{
+            bottom:15px;
+            left:15px;
+        }
+    }
+    
+}
+
+@media(max-width:1022px){
+    .events-page .past-events{
+        margin: 40px 0;
+        h1{
+            font-size: 20px;
+        }
+        .link-container{
+            margin-top: 15px;
+        }
+    }
+    .events-page .past-events .item1{
+        width: 46%;
+    }
+    
+}
+
+@media(max-width:650px){
+    .events-page .past-events{
+        margin: 45px 0;
+        h1{
+            text-align: center;
+            font-size: 25px;
+        }
+        .link-container{
+            margin-top: 25px;
+        }
+    }
+    .events-page .past-events .item1{
+        width: 100%;
+        margin:15px 0;
+    }
+    
+}
+
+.events-page .past-events{
+    .item1{
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s ease-in-out;
+        &:hover{
+            transform: translateY(-12.5px);
+            -webkit-transform: translateY(-12.5px);
+        }
+    }
+    .item1:before {
+        content: "";
+        position: absolute;
+        z-index: 3;
+        left: 51%;
+        right: 51%;
+        bottom: 0;
+        background: #C92E34;
+        height: 4px;
+        -webkit-transition-property: left, right;
+        transition-property: left, right;
+        -webkit-transition-duration: 0.35s;
+        transition-duration: 0.35s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    .item1:hover:before{
+        left: 0;
+        right: 0;
+    }
+}
+
+@media(max-width:650px){
+    .events-page .past-events{
+        .item1{
+            &:hover{
+                transform: translateY(0);
+                -webkit-transform: translateY(0);
+            }
+        }
+        .item1:before {
+            background: none;
+        }
+    }
+}

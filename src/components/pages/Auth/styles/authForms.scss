@@ -1,0 +1,210 @@
+.auth-shared-component .form-container form{
+    // border:1px solid red;
+    width: 90%;
+    h1{
+        font-size: 25px;
+    }
+    
+}
+
+.auth-shared-component .form-container form{
+    .input-content{
+        margin:30px 0;
+        p{
+            font-size: 16px;
+            margin-bottom: 7.5px;
+            span{
+                color:#C92E34;
+            }
+        }
+    }
+    .inner-input-content{
+        border:1px solid #ddd;
+        padding:0 10px 0 20px;
+        display: flex;
+        align-items: center;
+        border-radius: 7.5px;
+        &:focus-within{
+            border:1px solid #C92E34;
+            span{
+                color:#C92E34;
+            }
+            svg{
+                -webkit-animation-name: hvr-icon-pulse-shrink;
+                animation-name: hvr-icon-pulse-shrink;
+                -webkit-animation-duration: 0.3s;
+                animation-duration: 0.3s;
+                -webkit-animation-timing-function: linear;
+                animation-timing-function: linear;
+                -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+                -webkit-animation-direction: alternate;
+                animation-direction: alternate;
+            }
+        }
+        span{
+            font-size: 22.5px;
+            color:#999;
+            margin-right: 15px;
+            svg{
+                margin-bottom: -2px;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+                -webkit-transition-timing-function: ease-out;
+                transition-timing-function: ease-out;
+            }
+        }
+        input{
+            height: 50px;
+            border-radius: 7.5px;
+            font-size: 17px;
+            color:#999;
+            background: #fff !important;
+            flex: 1;
+            border:0;
+            &:focus{
+                outline: none;
+            }
+            &::placeholder{
+                color:#999;
+            }
+        }
+    }
+    .agree-terms-row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: -25px;
+        margin-bottom: 35px;
+        a{
+            color: #C92E34;
+        }
+        .inner-row{
+            margin: 7.5px 20px 7.5px 0;
+            input{
+                margin-right: 10px;
+                margin-left: 3px;
+                transform: scale(1.2);
+            }
+            label{
+                font-size: 16px;
+            }
+        }
+        .link{
+            width: fit-content;
+            margin:7.5px 0;
+            font-size: 16px;
+        }
+    }
+    .button-container{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .submit-button{
+        background-color: #C92E34;
+        cursor: pointer;
+        border:0;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: bold;
+        padding:15px 35px;
+        color:#fff;
+        border-radius: 7.5px;
+    }
+    .text{
+        text-align: center;
+        font-size: 16px;
+        a{
+            color: #C92E34;
+        }
+    }
+}
+
+
+
+@-webkit-keyframes hvr-icon-pulse-shrink {
+    to {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+    }
+}
+@keyframes hvr-icon-pulse-shrink {
+    to {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+    }
+}
+
+@media(max-width:1451px){
+    .auth-shared-component .form-container form{
+        width: 90%;
+        h1{
+            font-size: 20px;
+        }
+    }
+    .auth-shared-component .form-container form{
+        .input-content{
+            margin:25px 0;
+            p{
+                font-size: 14px;
+                margin-bottom: 7.5px;       
+            }
+        }
+        .inner-input-content{
+            padding:0 7.5px 0 15px;
+            border-radius: 5px;
+            span{
+                font-size: 19px;
+                margin-right: 12.5px;
+                svg{
+                    margin-bottom: -2px;
+                }
+            }
+            input{
+                height: 40px;
+                border-radius: 5px;
+                font-size: 14px;
+            }
+        }
+        .agree-terms-row{
+            margin-top: -20px;
+            margin-bottom: 30px;
+            .inner-row{
+                margin: 5px 15px 5px 0;
+                input{
+                    margin-right: 8px;
+                    margin-left: 3px;
+                    transform: scale(1.1);
+                }
+                label{
+                    font-size: 14px;
+                }
+            }
+            .link{
+                margin:5px 0;
+                font-size: 14px;
+            }
+        }
+        .button-container{
+            margin-bottom: 20px;
+        }
+        .submit-button{
+            font-size: 15px;
+            font-weight: bold;
+            padding:12.5px 30px;
+            border-radius: 5px;
+        }
+        .text{
+            font-size: 14px;
+        }
+    }
+}
+@media(max-width:1451px){
+    .auth-shared-component .form-container form{
+        width: 100%;
+    }
+}

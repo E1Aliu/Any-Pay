@@ -1,0 +1,381 @@
+.payment-gateway-page .support .row3{
+    margin:7.5% 0;
+    padding:0 7.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .col1{
+        width: 45%;
+    }
+    .img{
+        width: 45%;
+        content: url('../../../../assets/PaymentGateway/row3.png');
+    }
+    h1{
+        font-size: 30px;
+    }
+    p{
+        width: 75%;
+        font-size: 18px;
+        line-height: 1.7;
+        margin:20px 0 30px;
+    }
+    .item{
+        padding:15px 25px 15px 70px;
+        width: fit-content;
+        max-width: 100%;
+        position: relative;
+        margin:35px 10px;
+        border-radius: 7.5px;
+        transition: 0.35s ease-in-out;
+        &:hover{
+            transform: translateX(12.5px);
+        }
+        &:first-child{
+            background: #f7cef2;
+            .icon{
+                color:#c779be;
+                box-shadow: -5px -5px  #c779be;
+            }
+        }
+        &:last-child{
+            background: #c9f8d9;
+            .icon{
+                color:#3AA85F;
+                box-shadow: -5px -5px  #3AA85F;
+            }
+        }
+    }
+    span{
+        font-size: 18px;
+    }
+    .icon{
+        width: 55px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        position: absolute;
+        left:-5px;
+        top:-5px;
+        background: #fff;
+        border-radius: 5px;
+    }
+}
+
+@media(max-width:1451px){
+    .payment-gateway-page .support .row3{
+        margin:7.5% 0;
+        .col1{
+            width: 45%;
+        }
+        .img{
+            width: 45%;
+        }
+        h1{
+            font-size:25px;
+        }
+        p{
+            width: 100%;
+            font-size: 15px;
+            margin:20px 0 30px;
+        }
+        .item{
+            padding:15px 20px 15px 60px;
+            margin:30px 10px;
+            border-radius: 7.5px;
+            &:first-child{
+                .icon{
+                    box-shadow: -4px -4px  #c779be;
+                }
+            }
+            &:last-child{
+                .icon{
+                    box-shadow: -4px -4px  #3AA85F;
+                }
+            }
+        }
+        span{
+            font-size: 15px;
+        }
+        .icon{
+            width: 50px;
+            height: 40px;
+            font-size: 25px;
+            left:-2px;
+            top:-2px;
+        }
+    }
+}
+
+
+@media(max-width:800px){
+    .payment-gateway-page .support .row3{
+        margin:35px 0;
+        .col1{
+            width: 100%;
+            margin:20px 0;
+        }
+        .img{
+            margin:20px auto;
+            width: 400px;
+            max-width: 100%;
+        }
+        h1{
+            font-size:20px;
+        }
+        p{
+            margin:15px 0 20px;
+        }
+        .item{
+            padding:15px 20px 15px 60px;
+            margin:25px 9px;
+            &:hover{
+                transform: translateX(0);
+            }
+        }
+        .icon{
+            width: 50px;
+            height: 40px;
+            font-size: 25px;
+            left:-2px;
+            top:-2px;
+        }
+    }
+}
+
+//===========================================
+.payment-gateway-page .support .row4{
+    margin:10% 0 7.5%;
+    h1{
+        font-size: 27.5px;
+        margin:0 auto;
+        width: 50%;
+        text-align: center;
+    }
+    .p{
+        font-size: 18px;
+        line-height: 1.7;
+        width: 40%;
+        text-align: center;
+        margin:20px auto 75px;
+    }
+    .inner-row4{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.payment-gateway-page .support .row4 .col1{
+    position: relative;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .img1{
+        position: absolute;
+        width: 75%;
+        top:50%;
+        left: 0;
+        transform: translateY(-50%);
+        content: url('../../../../assets/PaymentGateway/img11.png');
+    }
+    .item4{
+        border:1px solid #eee;
+        border-radius: 10px;
+        background: #fff;
+        position: relative;
+        z-index: 2;
+        width: 310px;
+        padding:20px 25px 0;
+        margin:25px 0;
+        &:hover{
+            background: #64a7ff;
+            transition: all 0.1s ease-in-out;
+            h5,h6,a{
+                color:#fff;
+            }
+        }
+    }
+    h5{
+        font-weight: normal;
+        color:#555;
+        font-size: 18px;
+    }
+    h6{
+        font-size: 17px;
+        margin:10px 0 25px;
+    }
+    .inline{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .icon{
+        height: 65px;
+    }
+    a{
+        display: flex;
+        align-items: center;
+        color:#EC3434;
+        font-size: 17px;
+        svg{
+            font-size: 20px;
+            margin-left: 5px;
+        }
+    }
+}
+
+.payment-gateway-page .support .row4 .col2{
+    position: relative;
+    width: 65%;
+    .img2{
+        content: url('../../../../assets/PaymentGateway/img2.png');
+        position: absolute;
+        height: 66%;
+        top:17%;
+        left: 0;
+        z-index: 2;
+    }
+    .img-container{
+        position: relative;
+        width: 80%;
+        margin-left: auto;
+    }
+    .img3{
+        content: url('../../../../assets/PaymentGateway/img3.png');
+        border-radius: 15px 0 0 15px;
+        width: 100%;
+    }
+    h4{
+        color:#fff;
+        font-size: 20px;
+        position: absolute;
+        top:25px;
+        left: 25px;
+    }
+}
+
+@media(max-width:1451px){
+    .payment-gateway-page .support .row4{
+        margin:10% 0 7.5%;
+        h1{
+            font-size: 20px;
+            width: 100%;
+        }
+        .p{
+            font-size: 15px;
+            width: 50%;
+            margin:15px auto 65px;
+        }
+    }
+    
+    .payment-gateway-page .support .row4 .col1{
+        width: 30%;
+        align-items: flex-end;
+        .img1{
+            width: 75%;
+            top:50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+        .item4{
+            width: 280px;
+            padding:15px 20px 0;
+            margin:20px 0;
+        }
+        h5{
+            font-size: 15px;
+        }
+        h6{
+            font-size: 14px;
+            margin:10px 0 25px;
+        }
+        .icon{
+            height: 55px;
+        }
+        a{
+            font-size: 15px;
+            svg{
+                font-size: 17px;
+            }
+        }
+    }
+    
+    .payment-gateway-page .support .row4 .col2{
+        width: 65%;
+        .img2{
+            height: 66%;
+            top:17%;
+        }
+        .img-container{
+            width: 80%;
+        }
+        .img3{
+            border-radius: 12px 0 0 12px;
+        }
+        h4{
+            font-size: 17.5px;
+            top:20px;
+            left: 20px;
+        }
+    }
+}
+
+
+
+@media(max-width:1000px){
+    .payment-gateway-page .support .row4{
+        margin:45px 0 35px;
+        h1{
+            font-size: 20px;
+            width: 100%;
+            padding:0 7.5%;
+        }
+        .p{
+            width: 100%;
+            margin:15px auto 25px;
+            padding:0 7.5%;
+        }
+    }
+    
+    .payment-gateway-page .support .row4 .col1{
+        width: 100%;
+        align-items: unset;
+        padding:0 7.5%;
+
+        .img1{
+            display: none;
+        }
+        .item4{
+            width: 300px;
+            max-width: 100%;
+            padding:25px 20px 0;
+            margin:15px auto;
+        }
+    }
+    
+    .payment-gateway-page .support .row4 .col2{
+        width: 100%;
+        margin:35px 0 20px;
+        .img2{
+            height: 65%;
+            top:30%;
+        }
+        .img-container{
+            width: 80%;
+        }
+        .img3{
+            border-radius: 10px 0 0 10px;
+        }
+        h4{
+            font-size: 17px;
+            top:15px;
+            left: 25px;
+        }
+    }
+}

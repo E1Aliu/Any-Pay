@@ -1,0 +1,192 @@
+.payments-page{
+    overflow: hidden;
+}
+.payments-page  .shared-banner{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    .other-elements{
+        width: 45%;
+        position: absolute;
+        bottom:-12.5%;
+        right: 5%;
+    }
+    .images{
+        position: relative;
+    }
+    .img{
+        content: url('../../../../assets/Payments/payments.png');
+        width: 75%;
+        margin:0 auto;
+    }
+    .banner-item{
+        position: absolute;
+        background: #fff;
+        border:1px solid #f2f2f2;
+        z-index: 2;
+        border-radius: 7.5px;
+        padding:15px;
+        width: 125px;
+        text-align: center;
+        .icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            font-size: 35px;
+            border-radius: 50%;
+            margin:0 auto 10px;
+            color:#222;
+
+        }
+        a{
+           font-size: 16px;
+           text-align: center;
+           color:#111;
+
+           svg{
+               color:#C92E34;
+               font-size: 20px;
+               margin-bottom: -5px;
+           }
+        }
+    }
+    .class1{
+        top:120px;
+        left:50px;
+        transform: rotate(-20deg);
+        .icon{
+            border:3px solid #b7deff;
+        }
+        &:hover{
+            background: #6fbeff;
+            border:1px solid #6fbeff;
+            .icon, a, svg{
+                color:#fff;
+            }
+        }
+    }
+    .class2{
+        top:0;
+        left:25%;
+        transform: rotate(-5deg);
+        .icon{
+            border:3px solid #fff195;
+        }
+        &:hover{
+            background: #e9d765;
+            border:1px solid #e9d765;
+            .icon, a, svg{
+                color:#fff;
+            }
+        }
+    
+    }
+    .class3{
+        top:-20px;
+        left:60%;
+        transform: rotate(5deg);
+        .icon{
+            border:3px solid #a7ffa1;
+        }
+        &:hover{
+            background: #7cda75;
+            border:1px solid #7cda75;
+            .icon, a, svg{
+                color:#fff;
+            }
+        }
+    }
+    .class4{
+        top:100px;
+        right:0;
+        transform: rotate(25deg);
+        .icon{
+            border:3px solid #ffb8a0;
+        }
+        &:hover{
+            background: #eba48c;
+            border:1px solid #eba48c;
+            .icon, a, svg{
+                color:#fff;
+            }
+        }
+    }
+}
+
+@media(max-width:1451px){
+    .payments-page  .shared-banner{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92.5%);
+        .other-elements{
+            width: 45%;
+            bottom:unset;
+            top:150px;
+        }
+        .banner-item{
+            padding:12.5px;
+            width: 100px;
+            .icon{
+                width: 40px;
+                height: 40px;
+                font-size: 27.5px;
+                margin:0 auto 10px;    
+            }
+            a{
+               font-size: 14px;    
+               svg{
+                   font-size: 17.5px;
+                   margin-bottom: -4px;
+               }
+            }
+        }
+        .class1{
+            top:75px;
+            left:0;
+        }
+        .class2{
+            top:0;
+        }
+        .class3{
+            top:-20px;
+        }
+        .class4{
+            top:100px;
+        }
+    }
+}
+
+@media(max-width:767px){
+    .payments-page  .shared-banner{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+        .other-elements{
+            width: 450px;
+            max-width: 100%;
+            margin:45px auto 0;
+            bottom:unset;
+            top:unset;
+            right: unset;
+            position: relative;
+        }
+        .img{
+            width: 100%;
+        }
+        .banner-item{
+            padding:12.5px;
+            width: 90px;
+            a{
+               font-size: 13px;    
+               svg{
+                   font-size: 16px;
+                   margin-bottom: -3px;
+               }
+            }
+        }
+        .class3{
+            right: 15%;
+            top:10px;
+        }
+        .class4{
+            top:unset;
+            bottom:0;
+        }
+    }
+}

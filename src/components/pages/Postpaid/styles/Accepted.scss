@@ -1,0 +1,206 @@
+.postpaid-page .accepted-component{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:10% 0;
+    padding:0 10%;
+    .img-cont{
+        width: 47.5%;
+    }
+    .img{
+        content: url('../../../../assets/Postpaid/img1.png');
+        width: 100%;
+        transition: 0.35s ease-in-out;
+        &:hover{
+            transform: scale(1.035);
+        }
+    }
+    .info{
+        width: 40%;
+    }
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 18px;
+        margin:10px 0 20px;
+    }
+    .items{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .item{
+        width: 90px;
+        margin:10px 10px 10px 0;
+        .icon{
+            width: 55px;
+            height: 55px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            margin:0 auto 12.5px;
+        }
+        h6{
+            font-weight: normal;
+            font-size: 17px;
+            text-align: center;
+        }
+        &:first-child{
+            .icon{
+                background: #fff8d6;
+                color: #FFD500;
+            }
+        }
+        &:nth-child(2){
+            .icon{
+                background: #f4e0ff;
+                color: #BB44FF;
+            }
+        }
+        &:nth-child(3){
+            .icon{
+                background: #e9ffe6;
+                color: #6af156;
+            }
+        }
+        &:nth-child(4){
+            .icon{
+                background: #e6f1ff;
+                color: #4496FF;
+            }
+        }
+    }
+    button{
+        width: 55px;
+        height: 55px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        margin:10px 10px 10px 0;        
+        color: #FC0000;
+        background: #ffe9e9;
+        cursor: pointer;
+        border:0;
+    }
+}
+
+@media(max-width:1451px){
+    .postpaid-page .accepted-component{
+        padding:0 7.5%;
+        .img-cont{
+            width: 47.5%;
+        }
+        .info{
+            width: 45%;
+        }
+        h1{
+            font-size: 25px;
+        }
+        p{
+            font-size: 15px;
+            margin:7.5px 0 20px;
+        }
+        .items{
+            margin-bottom: 20px;
+        }
+        .item{
+            width: 80px;
+            margin:7.5px 10px 7.5px 0;
+            .icon{
+                width: 50px;
+                height: 50px;
+                font-size: 27.5px;
+                margin:0 auto 12.5px;
+            }
+            h6{
+                font-size: 15px;
+            }
+        
+        }
+        button{
+            width: 50px;
+            height: 50px;
+            font-size: 27.5px;
+            margin:7.5px 10px 7.5px 0;        
+        }
+    }
+}
+
+@media(max-width:767px){
+    .postpaid-page .accepted-component{
+        margin:30px 0;
+        .img-cont{
+            width:400px;
+            max-width: 100%;
+            margin:20px auto;
+        }
+        .img{
+            &:hover{
+                transform: scale(1);
+            }
+        }
+        .info{
+            width: 100%;
+            margin: 20px auto;
+        }
+        h1{
+            font-size: 20px;
+        }
+    }
+}
+
+@-webkit-keyframes hvr-icon-up {
+    0%,
+      50%,
+      100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    25%,
+      75% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+}
+@keyframes hvr-icon-up {
+    0%,
+      50%,
+      100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    25%,
+      75% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+}
+
+.postpaid-page .accepted-component{
+    .item{
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    }
+    .item svg{
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+    .item:hover svg{
+        -webkit-animation-name: hvr-icon-up;
+        animation-name: hvr-icon-up;
+        -webkit-animation-duration: 0.75s;
+        animation-duration: 0.75s;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
